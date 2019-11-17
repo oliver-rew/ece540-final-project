@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="8192001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/byte_controller/bit_controller/c_state">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/byte_controller/bit_controller/c_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">c_state[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/D">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/D[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/HSEL_d">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/HSEL_d[4:0]</obj_property>
+      <obj_property name="ObjectShortName">HSEL_d[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDRBWRADDR[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/HADDR">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/HADDR[1:0]</obj_property>
+      <obj_property name="ObjectShortName">HADDR[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/data">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="ObjectShortName">prer_reg_n_0_[15:15]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 13 21:31:57 2019
+# Process ID: 14425
+# Current directory: /home/rew
+# Command line: vivado
+# Log file: /home/rew/vivado.log
+# Journal file: /home/rew/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project i2c_test /home/rew/i2c_test -part xc7a100tcsg324-1
+add_files -norecurse {/home/rew/Downloads/i2c_latest/i2c/trunk/rtl/verilog/timescale.v /home/rew/Downloads/i2c_latest/i2c/trunk/rtl/verilog/i2c_master_top.v /home/rew/Downloads/i2c_latest/i2c/trunk/rtl/verilog/i2c_master_defines.v /home/rew/Downloads/i2c_latest/i2c/trunk/rtl/verilog/i2c_master_byte_ctrl.v /home/rew/Downloads/i2c_latest/i2c/trunk/rtl/verilog/i2c_master_bit_ctrl.v}
+import_files -force -norecurse
+import_files -fileset constrs_1 -force -norecurse /home/rew/Documents/project-1-ece-540-fall-2019-maverick/constraints/mfp_nexys4_ddr.xdc
+update_compile_order -fileset sources_1
+close_project
+open_project /home/rew/Documents/project_2_vivado/project_2_vivado.xpr
+close_project
+open_project /home/rew/i2c_test/i2c_test.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/rew/i2c_test/i2c_test.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 /home/rew/i2c_test/i2c_test.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc
+add_files -fileset constrs_1 -norecurse /home/rew/Documents/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/constraints/mfp_nexys4_ddr.xdc
+import_files -fileset constrs_1 -force /home/rew/Documents/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/constraints/mfp_nexys4_ddr.xdc
+close_project
+open_project /home/rew/Documents/project_2_vivado/project_2_vivado.xpr
+archive_project /home/rew/Documents/final_project.xpr.zip -force -include_local_ip_cache
