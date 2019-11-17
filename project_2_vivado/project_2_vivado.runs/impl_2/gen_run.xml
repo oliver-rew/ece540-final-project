@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1573945291">
+<GenRun Id="impl_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1573962727">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="mfp_nexys4_ddr.drc"/>
   <File Type="BG-BGN" Name="mfp_nexys4_ddr.bgn"/>
@@ -15,6 +15,7 @@
   <File Type="BG-BIT" Name="mfp_nexys4_ddr.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mfp_nexys4_ddr_bus_skew_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mfp_nexys4_ddr_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mfp_nexys4_ddr_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="mfp_nexys4_ddr.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mfp_nexys4_ddr_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mfp_nexys4_ddr_timing_summary_postroute_physopted.pb"/>
@@ -68,8 +69,6 @@
   <File Type="REPORTS-TCL" Name="mfp_nexys4_ddr_reports.tcl"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="mfp_nexys4_ddr_bus_skew_routed.pb"/>
   <File Type="PA-TCL" Name="mfp_nexys4_ddr.tcl"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mfp_nexys4_ddr_bus_skew_postroute_physopted.rpt"/>
-  <File Type="PA-DCP" Name="mfp_nexys4_ddr.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hdl_part1/world_maps_part1/world_map.ngc">

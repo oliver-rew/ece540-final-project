@@ -105,8 +105,8 @@ module mfp_ahb
     HRDATA3, 
     
     //I2C
-    i2c_scl,
     i2c_sda,
+    i2c_scl,
     i2c_clk
   );
                             

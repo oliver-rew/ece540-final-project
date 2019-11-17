@@ -36,8 +36,9 @@ module mfp_nexys4_ddr(
     output VGA_HS, VGA_VS,
     
     //JA pins for I2C TODO should these both be inout?
-    inout [2:1] JA //JA1 = SCL, JA2 = SDA
+    inout [3:1] JA //JA1 = SCL, JA2 = SDA
 );
+    assign JA[3] = LED[15];
 
     // Press btnCpuReset to reset the processor. 
         

@@ -96,7 +96,7 @@ set_property -dict {PACKAGE_PIN P18 IOSTANDARD LVCMOS33} [get_ports BTND]
 #JA pins for I2C
 set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports {JA[1]}]
 set_property -dict {PACKAGE_PIN D18 IOSTANDARD LVCMOS33} [get_ports {JA[2]}]
-#set_property -dict { PACKAGE_PIN E18   IOSTANDARD LVCMOS33 } [get_ports { JA[3] }]; #IO_L21P_T3_DQS_15 Sch=ja[3]
+set_property -dict { PACKAGE_PIN E18   IOSTANDARD LVCMOS33 } [get_ports { JA[3] }]; #IO_L21P_T3_DQS_15 Sch=ja[3]
 #set_property -dict { PACKAGE_PIN G17   IOSTANDARD LVCMOS33 } [get_ports { JA[4] }]; #IO_L18N_T2_A23_15 Sch=ja[4]
 #set_property -dict { PACKAGE_PIN D17   IOSTANDARD LVCMOS33 } [get_ports { JA[7] }]; #IO_L16N_T2_A27_15 Sch=ja[7]
 #set_property -dict { PACKAGE_PIN E17   IOSTANDARD LVCMOS33 } [get_ports { JA[8] }]; #IO_L16P_T2_A28_15 Sch=ja[8]
@@ -320,109 +320,6 @@ set_output_delay -clock clk_virt -max -add_delay 20.000 [get_ports DP]
 
 
 
-create_debug_core u_ila_0 ila
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_DATA_DEPTH 8192 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list clk_wiz_0/inst/clk_out1]]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-set_property port_width 5 [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/byte_controller/bit_controller/c_state[0]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/byte_controller/bit_controller/c_state[1]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/byte_controller/bit_controller/c_state[2]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/byte_controller/bit_controller/c_state[3]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/byte_controller/bit_controller/c_state[4]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-set_property port_width 4 [get_debug_ports u_ila_0/probe1]
 connect_debug_port u_ila_0/probe1 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/D[0]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/D[1]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/D[2]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/D[3]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-set_property port_width 5 [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/HSEL_d[0]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/HSEL_d[1]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/HSEL_d[2]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/HSEL_d[3]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/HSEL_d[4]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-set_property port_width 8 [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[0]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[1]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[2]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[3]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[4]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[5]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[6]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/data[7]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
-set_property port_width 16 [get_debug_ports u_ila_0/probe4]
-connect_debug_port u_ila_0/probe4 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[0]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[1]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[2]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[3]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[4]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[5]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[6]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[7]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[8]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[9]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[10]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[11]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[12]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[13]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[14]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/ADDRBWRADDR[15]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
-set_property port_width 2 [get_debug_ports u_ila_0/probe5]
 connect_debug_port u_ila_0/probe5 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/HADDR[0]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/HADDR[1]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
-set_property port_width 8 [get_debug_ports u_ila_0/probe6]
-connect_debug_port u_ila_0/probe6 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/data[0]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/data[1]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/data[2]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/data[3]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/data[4]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/data[5]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/data[6]} {mfp_sys/mfp_ahb_withloader/mfp_ahb/data[7]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
-set_property port_width 1 [get_debug_ports u_ila_0/probe7]
-connect_debug_port u_ila_0/probe7 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[15]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
-set_property port_width 1 [get_debug_ports u_ila_0/probe8]
-connect_debug_port u_ila_0/probe8 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[14]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
-set_property port_width 1 [get_debug_ports u_ila_0/probe9]
-connect_debug_port u_ila_0/probe9 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[13]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
-set_property port_width 1 [get_debug_ports u_ila_0/probe10]
-connect_debug_port u_ila_0/probe10 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[12]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
-set_property port_width 1 [get_debug_ports u_ila_0/probe11]
-connect_debug_port u_ila_0/probe11 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[11]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
-set_property port_width 1 [get_debug_ports u_ila_0/probe12]
-connect_debug_port u_ila_0/probe12 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[10]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
-set_property port_width 1 [get_debug_ports u_ila_0/probe13]
-connect_debug_port u_ila_0/probe13 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[9]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
-set_property port_width 1 [get_debug_ports u_ila_0/probe14]
-connect_debug_port u_ila_0/probe14 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[8]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
-set_property port_width 1 [get_debug_ports u_ila_0/probe15]
-connect_debug_port u_ila_0/probe15 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[7]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
-set_property port_width 1 [get_debug_ports u_ila_0/probe16]
-connect_debug_port u_ila_0/probe16 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[6]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
-set_property port_width 1 [get_debug_ports u_ila_0/probe17]
-connect_debug_port u_ila_0/probe17 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[5]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
-set_property port_width 1 [get_debug_ports u_ila_0/probe18]
-connect_debug_port u_ila_0/probe18 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[4]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
-set_property port_width 1 [get_debug_ports u_ila_0/probe19]
-connect_debug_port u_ila_0/probe19 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[3]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
-set_property port_width 1 [get_debug_ports u_ila_0/probe20]
-connect_debug_port u_ila_0/probe20 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[2]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
-set_property port_width 1 [get_debug_ports u_ila_0/probe21]
-connect_debug_port u_ila_0/probe21 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[1]}]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
-set_property port_width 1 [get_debug_ports u_ila_0/probe22]
-connect_debug_port u_ila_0/probe22 [get_nets [list {mfp_sys/mfp_ahb_withloader/mfp_ahb/i2c/i2c/prer_reg_n_0_[0]}]]
-set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
-set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
-set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
-connect_debug_port dbg_hub/clk [get_nets clk_out]
+

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Nov 16 10:52:38 2019
-# Process ID: 19255
+# Start of session at: Sat Nov 16 19:52:08 2019
+# Process ID: 24002
 # Current directory: /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2
 # Command line: vivado -log mfp_nexys4_ddr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mfp_nexys4_ddr.tcl
 # Log file: /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/mfp_nexys4_ddr.vds
@@ -18,14 +18,14 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19278 
+INFO: Helper process launched with PID 24036 
 WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/debounce.v:48]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1393.223 ; gain = 36.422 ; free physical = 5031 ; free virtual = 10893
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1392.980 ; gain = 8.922 ; free physical = 2993 ; free virtual = 8243
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:17]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-19255-rew-desktop/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-19255-rew-desktop/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-24002-rew-desktop/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-24002-rew-desktop/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -808,7 +808,7 @@ WARNING: [Synth 8-5788] Register IO_BotCtrl_reg in module mfp_ahb_gpio is has bo
 WARNING: [Synth 8-5788] Register IO_INT_ACK_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:61]
 	Parameter ARST_LVL bound to: 1'b0 
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_top.v:164]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_top.v:193]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_top.v:192]
 	Parameter ST_IDLE bound to: 5'b00000 
 	Parameter ST_START bound to: 5'b00001 
 	Parameter ST_READ bound to: 5'b00010 
@@ -839,8 +839,7 @@ INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mis
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_bit_ctrl.v:410]
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_byte_ctrl.v:230]
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_byte_ctrl.v:230]
-WARNING: [Synth 8-6014] Unused sequential element HTRANS_d_reg was removed.  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/mfp_ahb_i2c.v:61]
-WARNING: [Synth 8-3936] Found unconnected internal register 'HADDR_d_reg' and it is trimmed from '4' to '3' bits. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/mfp_ahb_i2c.v:52]
+WARNING: [Synth 8-6014] Unused sequential element HTRANS_d_reg was removed.  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/mfp_ahb_i2c.v:54]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:56]
 	Parameter seg_a bound to: 7'b0111111 
 	Parameter seg_b bound to: 7'b1011111 
@@ -905,7 +904,7 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Doc
 	Parameter VSYNC_END bound to: 779 - type: integer 
 	Parameter width bound to: 9 - type: integer 
 	Parameter divisor bound to: 3 - type: integer 
-WARNING: [Synth 8-689] width (7) of port connection 'quotient' does not match port width (9) of module 'integer_divide_lut' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:166]
+WARNING: [Synth 8-689] width (7) of port connection 'quotient' does not match port width (9) of module 'integer_divide_lut' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:167]
 	Parameter wc_back_key bound to: 2'b00 
 	Parameter wc_line_key bound to: 2'b01 
 	Parameter wc_obs_key bound to: 2'b10 
@@ -1013,7 +1012,6 @@ WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HRDATA[11]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HRDATA[10]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HRDATA[9]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HRDATA[8]
-WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HADDR[3]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HTRANS[1]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HTRANS[0]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[31]
@@ -1030,9 +1028,10 @@ WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[21]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[20]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[19]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[18]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[17]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1615.043 ; gain = 258.242 ; free physical = 4877 ; free virtual = 10745
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1614.801 ; gain = 230.742 ; free physical = 2849 ; free virtual = 8095
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1055,10 +1054,10 @@ WARNING: [Synth 8-3295] tying undriven pin top:BistIn[0] to constant 0 [/home/re
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1615.043 ; gain = 258.242 ; free physical = 4928 ; free virtual = 10795
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1614.801 ; gain = 230.742 ; free physical = 2901 ; free virtual = 8149
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1615.043 ; gain = 258.242 ; free physical = 4928 ; free virtual = 10795
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1614.801 ; gain = 230.742 ; free physical = 2901 ; free virtual = 8149
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1075,17 +1074,17 @@ INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as o
 Finished Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mfp_nexys4_ddr_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/mfp_nexys4_ddr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2011.879 ; gain = 0.000 ; free physical = 4547 ; free virtual = 10414
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2011.637 ; gain = 0.000 ; free physical = 2527 ; free virtual = 7774
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2011.879 ; gain = 0.000 ; free physical = 4547 ; free virtual = 10414
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2011.637 ; gain = 0.000 ; free physical = 2527 ; free virtual = 7774
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2011.879 ; gain = 0.000 ; free physical = 4547 ; free virtual = 10414
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2011.879 ; gain = 0.000 ; free physical = 4547 ; free virtual = 10414
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2011.637 ; gain = 0.000 ; free physical = 2527 ; free virtual = 7774
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2011.637 ; gain = 0.000 ; free physical = 2527 ; free virtual = 7774
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2011.879 ; gain = 655.078 ; free physical = 4719 ; free virtual = 10586
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2011.637 ; gain = 627.578 ; free physical = 2699 ; free virtual = 7947
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
 ---------------------------------------------------------------------------------
@@ -1093,7 +1092,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2011.879 ; gain = 655.078 ; free physical = 4719 ; free virtual = 10586
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2011.637 ; gain = 627.578 ; free physical = 2699 ; free virtual = 7947
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1103,7 +1102,7 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /
 Applied set_property DONT_TOUCH = true for rojobot31_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for clk_wiz_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2011.879 ; gain = 655.078 ; free physical = 4714 ; free virtual = 10581
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2011.637 ; gain = 627.578 ; free physical = 2697 ; free virtual = 7945
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "config0w_cnxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "synci_step0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -1223,7 +1222,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encodin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2011.879 ; gain = 655.078 ; free physical = 3212 ; free virtual = 9085
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2011.637 ; gain = 627.578 ; free physical = 1428 ; free virtual = 6685
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gclk'
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gtlbclk'
@@ -1243,7 +1242,7 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     19291|
 |4     |m14k_cpu__GC0       |           1|       114|
 |5     |m14k_top__GC0       |           1|       458|
-|6     |mfp_sys__GC0        |           1|      4199|
+|6     |mfp_sys__GC0        |           1|      4203|
 |7     |mfp_nexys4_ddr__GC0 |           1|      7701|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -1317,10 +1316,10 @@ Detailed RTL Component Info :
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 17    
 	                5 Bit    Registers := 18    
-	                4 Bit    Registers := 79    
-	                3 Bit    Registers := 31    
+	                4 Bit    Registers := 80    
+	                3 Bit    Registers := 30    
 	                2 Bit    Registers := 47    
-	                1 Bit    Registers := 948   
+	                1 Bit    Registers := 949   
 +---RAMs : 
 	             512K Bit         RAMs := 4     
 	               4K Bit         RAMs := 28    
@@ -1377,7 +1376,7 @@ Detailed RTL Component Info :
 	   4 Input      4 Bit        Muxes := 3     
 	   6 Input      4 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 63    
+	   2 Input      3 Bit        Muxes := 62    
 	   3 Input      3 Bit        Muxes := 5     
 	   5 Input      3 Bit        Muxes := 2     
 	   6 Input      3 Bit        Muxes := 1     
@@ -8460,10 +8459,8 @@ Detailed RTL Component Info :
 Module mfp_ahb_i2c 
 Detailed RTL Component Info : 
 +---Registers : 
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input      3 Bit        Muxes := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 Module counter__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -8569,8 +8566,9 @@ INFO: [Synth 8-4471] merging register 'mfp_ahb_p_ram/HTRANS_d_reg[1:0]' into 'mf
 INFO: [Synth 8-4471] merging register 'mfp_ahb_p_ram/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/memories/mfp_ahb_p_ram.v:36]
 INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HTRANS_d_reg[1:0]' into 'mfp_ahb_b_ram/HTRANS_d_reg[1:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:43]
 INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:41]
+INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HADDR_d_reg[3:0]' into 'i2c/HADDR_d_reg[3:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:40]
 INFO: [Synth 8-4471] merging register 'i2c/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/mfp_ahb_i2c.v:52]
-INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HADDR_d_reg[3:0]' into 'mfp_ahb_seven_seg_ctrl/HADDR_d_reg[3:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:40]
+INFO: [Synth 8-4471] merging register 'i2c/HADDR_d_reg[3:0]' into 'mfp_ahb_seven_seg_ctrl/HADDR_d_reg[3:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:40]
 INFO: [Synth 8-4471] merging register 'mfp_ahb_seven_seg_ctrl/HTRANS_d_reg[1:0]' into 'mfp_ahb_b_ram/HTRANS_d_reg[1:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:41]
 INFO: [Synth 8-4471] merging register 'mfp_ahb_seven_seg_ctrl/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:39]
 INFO: [Synth 8-5544] ROM "debounce/swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -8816,7 +8814,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/c
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (gate_clockgate_hclk/_len/q_reg[0]) is unused and will be removed from module m14k_biu.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:08 ; elapsed = 00:07:18 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2755 ; free virtual = 8779
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:50 ; elapsed = 00:07:02 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 1030 ; free virtual = 6177
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -8957,7 +8955,7 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     12647|
 |4     |m14k_cpu__GC0       |           1|        93|
 |5     |m14k_top__GC0       |           1|       439|
-|6     |mfp_sys__GC0        |           1|      2098|
+|6     |mfp_sys__GC0        |           1|      2306|
 |7     |mfp_nexys4_ddr__GC0 |           1|      1429|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -8968,13 +8966,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out2' to pi
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out3' to pin 'clk_wiz_0/bbstub_clk_out3/O'
 INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:14 ; elapsed = 00:07:23 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2657 ; free virtual = 8694
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:56 ; elapsed = 00:07:08 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 954 ; free virtual = 6097
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:07:17 ; elapsed = 00:07:27 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2639 ; free virtual = 8678
+Finished Timing Optimization : Time (s): cpu = 00:06:59 ; elapsed = 00:07:11 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 945 ; free virtual = 6091
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -9041,7 +9039,7 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     12647|
 |4     |m14k_cpu__GC0       |           1|        93|
 |5     |m14k_top__GC0       |           1|       439|
-|6     |mfp_sys__GC0        |           1|      2098|
+|6     |mfp_sys__GC0        |           1|      2306|
 |7     |mfp_nexys4_ddr__GC0 |           1|      1429|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -9088,7 +9086,7 @@ INFO: [Synth 8-6837] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_
 INFO: [Synth 8-6837] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p1/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:07:30 ; elapsed = 00:07:41 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2657 ; free virtual = 8694
+Finished Technology Mapping : Time (s): cpu = 00:07:11 ; elapsed = 00:07:24 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 965 ; free virtual = 6111
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9115,8 +9113,9 @@ INFO: [Synth 8-6064] Net \mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/we_ma
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6030] Inout pin 'JA[3]' is read and/or written without using tristate logic. Proper direction of connection may be wrongly inferred. Please use specific direction to avoid any incorrect logic issue [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:17]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:07:32 ; elapsed = 00:07:42 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2656 ; free virtual = 8693
+Finished IO Insertion : Time (s): cpu = 00:07:13 ; elapsed = 00:07:25 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 962 ; free virtual = 6108
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -9129,7 +9128,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:07:32 ; elapsed = 00:07:42 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2656 ; free virtual = 8693
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:13 ; elapsed = 00:07:25 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 962 ; free virtual = 6107
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9141,25 +9140,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:37 ; elapsed = 00:07:47 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2649 ; free virtual = 8686
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:17 ; elapsed = 00:07:29 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 958 ; free virtual = 6101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:07:37 ; elapsed = 00:07:47 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2649 ; free virtual = 8686
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:17 ; elapsed = 00:07:29 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 958 ; free virtual = 6101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:07:38 ; elapsed = 00:07:48 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2647 ; free virtual = 8684
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:18 ; elapsed = 00:07:30 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 955 ; free virtual = 6098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:07:38 ; elapsed = 00:07:48 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2647 ; free virtual = 8684
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:18 ; elapsed = 00:07:30 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 955 ; free virtual = 6098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -9202,11 +9201,11 @@ Report Cell Usage:
 |4     |BUFG        |     1|
 |5     |CARRY4      |   174|
 |6     |LUT1        |    94|
-|7     |LUT2        |   651|
-|8     |LUT3        |  1311|
-|9     |LUT4        |  1562|
-|10    |LUT5        |  2674|
-|11    |LUT6        |  5052|
+|7     |LUT2        |   653|
+|8     |LUT3        |  1310|
+|9     |LUT4        |  1571|
+|10    |LUT5        |  2692|
+|11    |LUT6        |  5041|
 |12    |MUXF7       |   278|
 |13    |MUXF8       |     2|
 |14    |RAM128X1S   |     3|
@@ -9216,40 +9215,40 @@ Report Cell Usage:
 |18    |RAMB36E1    |    32|
 |19    |RAMB36E1_1  |    32|
 |20    |SRL16E      |     9|
-|21    |FDCE        |   228|
+|21    |FDCE        |   229|
 |22    |FDPE        |    51|
 |23    |FDRE        |  8577|
 |24    |FDSE        |    43|
 |25    |IBUF        |    28|
 |26    |IOBUF       |     2|
-|27    |OBUF        |    47|
+|27    |OBUF        |    48|
 +------+------------+------+
 
 Report Instance Areas: 
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 |      |Instance                                                                                     |Module                                     |Cells |
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
-|1     |top                                                                                          |                                           | 20934|
+|1     |top                                                                                          |                                           | 20953|
 |2     |  color                                                                                      |colorizer                                  |     3|
-|3     |  debounce                                                                                   |debounce                                   |   184|
+|3     |  debounce                                                                                   |debounce                                   |   183|
 |4     |  dtg                                                                                        |dtg                                        |   196|
 |5     |  icon                                                                                       |icon                                       |    39|
 |6     |    div                                                                                      |integer_divide_lut__parameterized0         |    22|
-|7     |  mfp_sys                                                                                    |mfp_sys                                    | 20377|
-|8     |    mfp_ahb_withloader                                                                       |mfp_ahb_withloader                         |  1246|
-|9     |      mfp_ahb                                                                                |mfp_ahb                                    |   726|
-|10    |        i2c                                                                                  |mfp_ahb_i2c                                |   318|
-|11    |          i2c                                                                                |i2c_master_top                             |   318|
-|12    |            byte_controller                                                                  |i2c_master_byte_ctrl                       |   250|
-|13    |              bit_controller                                                                 |i2c_master_bit_ctrl                        |   194|
-|14    |        mfp_ahb_b_ram                                                                        |mfp_ahb_b_ram                              |    46|
-|15    |          ram_b0                                                                             |ram_b0                                     |     2|
+|7     |  mfp_sys                                                                                    |mfp_sys                                    | 20396|
+|8     |    mfp_ahb_withloader                                                                       |mfp_ahb_withloader                         |  1265|
+|9     |      mfp_ahb                                                                                |mfp_ahb                                    |   746|
+|10    |        i2c                                                                                  |mfp_ahb_i2c                                |   346|
+|11    |          i2c                                                                                |i2c_master_top                             |   345|
+|12    |            byte_controller                                                                  |i2c_master_byte_ctrl                       |   267|
+|13    |              bit_controller                                                                 |i2c_master_bit_ctrl                        |   210|
+|14    |        mfp_ahb_b_ram                                                                        |mfp_ahb_b_ram                              |    47|
+|15    |          ram_b0                                                                             |ram_b0                                     |     8|
 |16    |          ram_b1                                                                             |ram_b1                                     |     2|
 |17    |          ram_b2                                                                             |ram_b2                                     |     2|
 |18    |          ram_b3                                                                             |ram_b3                                     |     2|
-|19    |        mfp_ahb_gpio                                                                         |mfp_ahb_gpio                               |    66|
-|20    |        mfp_ahb_p_ram                                                                        |mfp_ahb_p_ram                              |   173|
-|21    |          ram_p0                                                                             |ram_p0                                     |    24|
+|19    |        mfp_ahb_gpio                                                                         |mfp_ahb_gpio                               |    62|
+|20    |        mfp_ahb_p_ram                                                                        |mfp_ahb_p_ram                              |   167|
+|21    |          ram_p0                                                                             |ram_p0                                     |    16|
 |22    |          ram_p1                                                                             |ram_p1                                     |    24|
 |23    |          ram_p2                                                                             |ram_p2                                     |    24|
 |24    |          ram_p3                                                                             |ram_p3                                     |    24|
@@ -9257,7 +9256,7 @@ Report Instance Areas:
 |26    |          mfp_ahb_sevensegtimer                                                              |mfp_ahb_sevensegtimer                      |    60|
 |27    |            counter16                                                                        |counter                                    |    21|
 |28    |            counterSel                                                                       |counter__parameterized0                    |    39|
-|29    |      mfp_srec_parser                                                                        |mfp_srec_parser                            |   330|
+|29    |      mfp_srec_parser                                                                        |mfp_srec_parser                            |   329|
 |30    |      mfp_srec_parser_to_ahb_lite_bridge                                                     |mfp_srec_parser_to_ahb_lite_bridge         |    64|
 |31    |      mfp_uart_receiver                                                                      |mfp_uart_receiver                          |   126|
 |32    |    mfp_ejtag_reset                                                                          |mfp_ejtag_reset                            |    12|
@@ -10882,11 +10881,11 @@ Report Instance Areas:
 |1651  |        _udi_in_m                                                                            |mvp_cregister__parameterized1              |     1|
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:07:38 ; elapsed = 00:07:48 . Memory (MB): peak = 2677.941 ; gain = 1321.141 ; free physical = 2646 ; free virtual = 8684
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:18 ; elapsed = 00:07:30 . Memory (MB): peak = 2680.184 ; gain = 1296.125 ; free physical = 954 ; free virtual = 6098
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:07:29 ; elapsed = 00:07:41 . Memory (MB): peak = 2681.852 ; gain = 928.215 ; free physical = 4359 ; free virtual = 10397
-Synthesis Optimization Complete : Time (s): cpu = 00:07:39 ; elapsed = 00:07:50 . Memory (MB): peak = 2681.852 ; gain = 1325.051 ; free physical = 4359 ; free virtual = 10397
+Synthesis finished with 0 errors, 1 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:09 ; elapsed = 00:07:25 . Memory (MB): peak = 2684.094 ; gain = 903.199 ; free physical = 2669 ; free virtual = 7816
+Synthesis Optimization Complete : Time (s): cpu = 00:07:19 ; elapsed = 00:07:34 . Memory (MB): peak = 2684.094 ; gain = 1300.035 ; free physical = 2669 ; free virtual = 7816
 INFO: [Project 1-571] Translating synthesized netlist
 Release 14.7 - ngc2edif P_INT.20180726 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -10900,7 +10899,7 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file world_map.edif ...
-ngc2edif: Total memory usage is 104704 kilobytes
+ngc2edif: Total memory usage is 104708 kilobytes
 
 Reading core file '/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hdl_part1/world_maps_part1/world_map.ngc' for (cell view 'world_map', library 'work')
 Parsing EDIF File [./.ngc2edfcache/world_map_ngc_5932e8e8.edif]
@@ -10910,20 +10909,22 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180726
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2717.961 ; gain = 0.000 ; free physical = 4329 ; free virtual = 10378
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2720.203 ; gain = 0.000 ; free physical = 2592 ; free virtual = 7738
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 5 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-737 Infos, 186 Warnings, 8 Critical Warnings and 0 Errors encountered.
+738 Infos, 185 Warnings, 9 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:07:45 ; elapsed = 00:07:57 . Memory (MB): peak = 2717.961 ; gain = 1361.238 ; free physical = 4403 ; free virtual = 10452
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2717.961 ; gain = 0.000 ; free physical = 4403 ; free virtual = 10452
+synth_design: Time (s): cpu = 00:07:25 ; elapsed = 00:07:41 . Memory (MB): peak = 2720.203 ; gain = 1336.223 ; free physical = 2667 ; free virtual = 7814
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2720.203 ; gain = 0.000 ; free physical = 2667 ; free virtual = 7814
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/mfp_nexys4_ddr.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2741.973 ; gain = 24.012 ; free physical = 4388 ; free virtual = 10444
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2744.215 ; gain = 24.012 ; free physical = 2653 ; free virtual = 7807
 INFO: [runtcl-4] Executing : report_utilization -file mfp_nexys4_ddr_utilization_synth.rpt -pb mfp_nexys4_ddr_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 11:00:49 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 20:00:03 2019...

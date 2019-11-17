@@ -189,7 +189,6 @@ module i2c_master_top(
 	    end
 	  else
 	    if (wb_wacc)
-	    //if (1'b1) //WHOA THIS WORKS?!?
 	      case (wb_adr_i) // synopsys parallel_case
 	         3'b000 : prer [ 7:0] <= #1 wb_dat_i;
 	         3'b001 : prer [15:8] <= #1 wb_dat_i;
