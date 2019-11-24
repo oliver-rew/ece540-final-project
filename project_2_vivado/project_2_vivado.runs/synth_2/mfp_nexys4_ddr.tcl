@@ -18,7 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -49,7 +48,6 @@ read_verilog -library xil_defaultlib {
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/d_wsram_2k2way_xilinx.v
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/dataram_2k2way_xilinx.v
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/debounce.v
-  /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hdl_part2/dtg.v
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/i_wsram_2k2way_xilinx.v
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/integer_divide_lut.v
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_alu_dsp_stub.v
@@ -231,9 +229,11 @@ read_verilog -library xil_defaultlib {
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_byte_ctrl.v
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_bit_ctrl.v
   /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/mfp_ahb_i2c.v
+  /home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_decoder.v
+  /home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/test_pattern.v
+  /home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v
+  /home/rew/Documents/final_project/camera/camera.srcs/sources_1/imports/hdl_part2/dtg.v
 }
-read_ip -quiet /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci
-
 read_ip -quiet /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]

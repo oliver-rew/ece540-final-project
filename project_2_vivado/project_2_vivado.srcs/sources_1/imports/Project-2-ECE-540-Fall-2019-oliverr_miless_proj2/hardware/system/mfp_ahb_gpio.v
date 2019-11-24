@@ -19,13 +19,7 @@ module mfp_ahb_gpio(
 // memory-mapped I/O
     input      [`MFP_N_SW-1  :0] IO_Switch,
     input      [`MFP_N_PB-1  :0] IO_PB,
-    output reg [`MFP_N_LED-1 :0] IO_LED,
-    
-    //Bot Control IO
-    output reg [7:0] IO_BotCtrl,
-    input [31:0] IO_Bot_Info,
-    output reg IO_INT_ACK,
-    input IO_BotUpdt_Sync
+    output reg [`MFP_N_LED-1 :0] IO_LED
 );
 
   reg  [3:0]  HADDR_d;
@@ -53,12 +47,6 @@ module mfp_ahb_gpio(
          case (HADDR_d)
            //4'h0 [5:2] == 0x00
            `H_LED_IONUM: IO_LED <= HWDATA[`MFP_N_LED-1:0];
-           
-           //4'h4 [5:2] == 0x10 BotCtrl
-           `H_BOT_CTRL_IONUM: IO_BotCtrl <= HWDATA[7:0];
-           
-           //4'h6 [5:2] == 0x18 Bot Int Ack
-           `H_BOT_ACK_IONUM: IO_INT_ACK <= HWDATA[0];
          endcase
     
 	always @(posedge HCLK or negedge HRESETn)
@@ -71,12 +59,6 @@ module mfp_ahb_gpio(
            
            //4'h2 [5:2] == 0x08
            `H_PB_IONUM: HRDATA <= { {32 - `MFP_N_PB {1'b0}}, IO_PB };
-           
-           //4'h3 [5:2] == 0x0c IO_Bot_Info 
-           `H_BOT_INFO_IONUM: HRDATA <= IO_Bot_Info;
-           
-           //4'h5 [5:2] == 0x14 IO_BotUpdt_Sync
-           `H_BOT_SYNC_IONUM: HRDATA <= {{31{1'b0}}, IO_BotUpdt_Sync};
            
             default:    HRDATA <= 32'h00000000;
          endcase

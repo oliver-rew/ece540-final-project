@@ -32,12 +32,6 @@ module mfp_ahb_withloader (
 	// reset system due to serial load
     output        MFP_Reset_serialload,
     
-    //Bot Control IO
-    output [7:0] IO_BotCtrl,
-    input [31:0] IO_Bot_Info,
-    output IO_INT_ACK,
-    input IO_BotUpdt_Sync,
-    
     //I2C
     inout i2c_sda,
     inout i2c_scl,
@@ -143,13 +137,7 @@ module mfp_ahb_withloader (
         .IO_SEV_SEG_CATH        (   IO_SEV_SEG_CATH         ),
         .IO_SEV_SEG_DP          (   IO_SEV_SEG_DP           ),
         .IO_SEV_SEG_AN          (   IO_SEV_SEG_AN           ),
-        
-        //Bot Control IO
-        .IO_BotCtrl             (   IO_BotCtrl              ),
-        .IO_Bot_Info            (   IO_Bot_Info             ),
-        .IO_INT_ACK             (   IO_INT_ACK              ),
-        .IO_BotUpdt_Sync        (   IO_BotUpdt_Sync         ),
-        
+
         //I2C
         .i2c_scl(i2c_scl),
         .i2c_sda(i2c_sda),

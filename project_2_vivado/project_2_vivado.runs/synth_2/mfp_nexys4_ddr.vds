@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Nov 23 21:54:42 2019
-# Process ID: 13108
+# Start of session at: Sun Nov 24 22:45:13 2019
+# Process ID: 12772
 # Current directory: /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2
 # Command line: vivado -log mfp_nexys4_ddr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mfp_nexys4_ddr.tcl
 # Log file: /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/mfp_nexys4_ddr.vds
@@ -18,14 +18,14 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13122 
+INFO: Helper process launched with PID 12786 
 WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/debounce.v:48]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1394.988 ; gain = 10.922 ; free physical = 7886 ; free virtual = 11331
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1394.980 ; gain = 10.922 ; free physical = 2489 ; free virtual = 6862
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:17]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-13108-rew-desktop/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-13108-rew-desktop/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-12772-rew-desktop/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-12772-rew-desktop/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -35,11 +35,6 @@ INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/rew/xilinx/Vivado/2018.3/
 INFO: [Synth 8-6155] done synthesizing module 'IBUF' (2#1) [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-13108-rew-desktop/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (4#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/.Xil/Vivado-13108-rew-desktop/realtime/blk_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (30) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:82]
-WARNING: [Synth 8-689] width (30) of port connection 'addrb' does not match port width (16) of module 'blk_mem_gen_0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:86]
-WARNING: [Synth 8-689] width (40) of port connection 'doutb' does not match port width (64) of module 'blk_mem_gen_0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:87]
 INFO: [Synth 8-6157] synthesizing module 'mfp_sys' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:10]
 INFO: [Synth 8-6157] synthesizing module 'm14k_top' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_top.v:73]
 	Parameter M14K_INSTNUM bound to: 0 - type: integer 
@@ -48,8 +43,8 @@ INFO: [Synth 8-6157] synthesizing module 'm14k_cpu' [/home/rew/Documents/final_p
 INFO: [Synth 8-6157] synthesizing module 'm14k_core' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_core.v:75]
 INFO: [Synth 8-6157] synthesizing module 'm14k_clock_nogate' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_clock_nogate.v:80]
 INFO: [Synth 8-6157] synthesizing module 'm14k_clock_buf' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_clock_buf.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_clock_buf' (5#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_clock_buf.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_clock_nogate' (6#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_clock_nogate.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_clock_buf' (4#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_clock_buf.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_clock_nogate' (5#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_clock_nogate.v:80]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz.v:76]
 	Parameter GW bound to: 3 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
@@ -58,216 +53,216 @@ INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc' [/home/rew/Document
 	Parameter WIDTH bound to: 6 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister' (7#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister' (6#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc' (7#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 4 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 4 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized0' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized0' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized0' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized0' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized0' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized0' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized1' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized1' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized1' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized1' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 9 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized1' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 9 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized2' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 9 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized2' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized1' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized1' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized2' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized1' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized1' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized2' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized2' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized3' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized3' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized2' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized2' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized3' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized2' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized2' (8#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_register' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register' (10#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized3' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 8 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized3' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 8 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized4' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized4' (10#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized3' (10#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized3' (10#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized4' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized3' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized3' (9#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_mux2' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux2.v:67]
 	Parameter WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-226] default block is never used [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux2.v:88]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_mux2' (11#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux2.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_mux2' (10#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux2.v:67]
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized0' (11#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized0' (10#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_antitamper_stub' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_antitamper_stub.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_antitamper_stub' (12#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_antitamper_stub.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_antitamper_stub' (11#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_antitamper_stub.v:9]
 INFO: [Synth 8-6157] synthesizing module 'mvp_mux8' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux8.v:70]
 	Parameter WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-226] default block is never used [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux8.v:100]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_mux8' (13#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux8.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_mux8' (12#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux8.v:70]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized4' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 5 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized4' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 5 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized5' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized5' (13#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized4' (13#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized4' (13#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized5' (12#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized4' (12#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized4' (12#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized5' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 10 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized5' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 10 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized6' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized6' (13#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized5' (13#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized5' (13#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized6' (12#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized5' (12#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized5' (12#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_eicoffset_stub' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_eicoffset_stub.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_eicoffset_stub' (14#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_eicoffset_stub.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_eicoffset_stub' (13#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_eicoffset_stub.v:73]
 INFO: [Synth 8-6157] synthesizing module 'm14k_edp_clz_16b' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_edp_clz_16b.v:78]
 INFO: [Synth 8-6157] synthesizing module 'm14k_edp_clz_4b' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_edp_clz_4b.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_edp_clz_4b' (15#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_edp_clz_4b.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_edp_clz_16b' (16#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_edp_clz_16b.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_edp_clz_4b' (14#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_edp_clz_4b.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_edp_clz_16b' (15#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_edp_clz_16b.v:78]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_srs1' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_srs1.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_srs1' (17#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_srs1.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_srs1' (16#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_srs1.v:76]
 INFO: [Synth 8-6157] synthesizing module 'mvp_ucregister_wide' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 	Parameter WIDTH bound to: 26 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register_ngc' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
 	Parameter WIDTH bound to: 26 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized1' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 26 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized1' (17#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized1' (16#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc' (17#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 INFO: [Synth 8-6157] synthesizing module 'mvp_ucregister_wide__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 	Parameter WIDTH bound to: 15 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register_ngc__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
 	Parameter WIDTH bound to: 15 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized2' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 15 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized2' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized0' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized0' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized2' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized0' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized0' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized6' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 38 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized6' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 38 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized7' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 38 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized7' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized6' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized6' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized7' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized6' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized6' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized8' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized8' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized8' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized7' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 17 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized7' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 17 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized9' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 17 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized9' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized7' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized7' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized9' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized7' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized7' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_ucregister_wide__parameterized1' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 	Parameter WIDTH bound to: 12 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register_ngc__parameterized1' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
 	Parameter WIDTH bound to: 12 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized3' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 12 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized3' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized1' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized1' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized3' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized1' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized1' (18#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 INFO: [Synth 8-6157] synthesizing module 'mvp_mux4' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
 	Parameter WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-226] default block is never used [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:91]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_mux4' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_mux4' (19#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_prid' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_prid.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_prid' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_prid.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_prid' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_prid.v:76]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized8' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 18 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized8' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 18 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized10' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 18 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized10' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized8' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized8' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized10' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized8' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized8' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_mux4__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
 	Parameter WIDTH bound to: 9 - type: integer 
 INFO: [Synth 8-226] default block is never used [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:91]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_mux4__parameterized0' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_mux4__parameterized0' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
 INFO: [Synth 8-6157] synthesizing module 'mvp_ucregister_wide__parameterized2' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 	Parameter WIDTH bound to: 28 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register_ngc__parameterized2' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
 	Parameter WIDTH bound to: 28 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized4' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 28 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized4' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized2' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized2' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized4' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized2' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized2' (20#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 INFO: [Synth 8-6157] synthesizing module 'mvp_mux1hot_3' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_3.v:63]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_mux1hot_3' (22#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_3.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_mux1hot_3' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_3.v:63]
 INFO: [Synth 8-6157] synthesizing module 'mvp_ucregister_wide__parameterized3' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 	Parameter WIDTH bound to: 5 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register_ngc__parameterized3' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
 	Parameter WIDTH bound to: 5 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized5' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized5' (22#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized3' (22#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized3' (22#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized5' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized3' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized3' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 INFO: [Synth 8-6157] synthesizing module 'mvp_ucregister_wide__parameterized4' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 	Parameter WIDTH bound to: 7 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register_ngc__parameterized4' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
 	Parameter WIDTH bound to: 7 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized6' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized6' (22#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized4' (22#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized4' (22#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized6' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized4' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized4' (21#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 INFO: [Synth 8-6157] synthesizing module 'mvp_mux1hot_24' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_24.v:63]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_mux1hot_24' (23#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_24.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_mux1hot_24' (22#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_24.v:63]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_watch_stub' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_watch_stub.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_watch_stub' (24#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_watch_stub.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_watch_stub' (23#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_watch_stub.v:76]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized9' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 14 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized9' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 14 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized11' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 14 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized11' (24#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized9' (24#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized9' (24#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized11' (23#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized9' (23#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized9' (23#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_sps_stub' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_sps_stub.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_sps_stub' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_sps_stub.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_sps_stub' (24#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_sps_stub.v:73]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized10' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 	Parameter WIDTH bound to: 28 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized10' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 	Parameter WIDTH bound to: 28 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized12' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 28 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized12' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized10' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized10' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized12' (24#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized10' (24#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized10' (24#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_pc_top' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc_top.v:77]
 INFO: [Synth 8-6157] synthesizing module 'mvp_mux1hot_4' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_4.v:63]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_mux1hot_4' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_4.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_mux1hot_4' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux1hot_4.v:63]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_pc' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc.v:77]
 	Parameter NXT_COUNTER bound to: 1'b1 
 	Parameter ERL bound to: 2 - type: integer 
@@ -278,52 +273,53 @@ INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized11' [/
 	Parameter WIDTH bound to: 11 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized13' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized13' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized11' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized11' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized13' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized11' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized11' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister__parameterized14' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 	Parameter WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized14' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized14' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
 INFO: [Synth 8-6157] synthesizing module 'mvp_mux4__parameterized1' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
 	Parameter WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-226] default block is never used [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:91]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_mux4__parameterized1' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_mux4__parameterized1' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_mux4.v:68]
 INFO: [Synth 8-6157] synthesizing module 'mvp_ucregister_wide__parameterized5' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 	Parameter WIDTH bound to: 256 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register_ngc__parameterized5' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
 	Parameter WIDTH bound to: 256 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized7' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 256 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized7' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized5' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized5' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized7' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized5' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized5' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 INFO: [Synth 8-6157] synthesizing module 'mvp_ucregister_wide__parameterized6' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
 	Parameter WIDTH bound to: 8 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register_ngc__parameterized6' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
 	Parameter WIDTH bound to: 8 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mvp_register__parameterized8' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
 	Parameter WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized8' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized6' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized6' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_pc' (27#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register__parameterized8' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_register_ngc__parameterized6' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_register_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_ucregister_wide__parameterized6' (25#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_ucregister_wide.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_pc' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc.v:77]
 INFO: [Synth 8-6157] synthesizing module 'm14k_cpz_pc__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc.v:77]
 	Parameter NXT_COUNTER bound to: 1'b0 
 	Parameter ERL bound to: 2 - type: integer 
 	Parameter EXL bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_pc__parameterized0' (27#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_pc__parameterized0' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc.v:77]
 INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_wide__parameterized12' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+	Parameter WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mvp_cregister_ngc__parameterized12' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter WIDTH bound to: 21 - type: integer 
 	Parameter WIDTH bound to: 21 - type: integer 
-	Parameter WIDTH bound to: 21 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized15' (27#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized12' (27#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized12' (27#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_pc_top' (28#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc_top.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister__parameterized15' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_ngc__parameterized12' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_ngc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mvp_cregister_wide__parameterized12' (26#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_cregister_wide.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_pc_top' (27#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_pc_top.v:77]
 	Parameter GW bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_root_stub' (29#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_root_stub.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_guest_srs1' (30#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_srs1.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_root_stub' (28#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_root_stub.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_guest_srs1' (29#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_srs1.v:76]
 WARNING: [Synth 8-3848] Net cause_s in module/entity m14k_cpz_guest_stub does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_stub.v:623]
 WARNING: [Synth 8-3848] Net cpz in module/entity m14k_cpz_guest_stub does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_stub.v:354]
 WARNING: [Synth 8-3848] Net cpz_mmutype in module/entity m14k_cpz_guest_stub does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_stub.v:357]
@@ -345,13 +341,14 @@ WARNING: [Synth 8-3848] Net srsmap2_rd in module/entity m14k_cpz_guest_stub does
 WARNING: [Synth 8-3848] Net srsmap_ld in module/entity m14k_cpz_guest_stub does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_stub.v:385]
 WARNING: [Synth 8-3848] Net srsmap_rd in module/entity m14k_cpz_guest_stub does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_stub.v:386]
 WARNING: [Synth 8-3848] Net vectornumber in module/entity m14k_cpz_guest_stub does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_stub.v:387]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_guest_stub' (31#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_stub.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz_guest_stub' (30#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz_guest_stub.v:76]
 WARNING: [Synth 8-3848] Net pc0_ctl_ec1 in module/entity m14k_cpz does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz.v:1205]
 WARNING: [Synth 8-3848] Net pc1_ctl_ec1 in module/entity m14k_cpz does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz.v:1206]
 WARNING: [Synth 8-3848] Net g_eic_mode in module/entity m14k_cpz does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz.v:636]
 WARNING: [Synth 8-3848] Net mpc_tlb_i_side in module/entity m14k_cpz does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz.v:652]
 WARNING: [Synth 8-3848] Net mpc_tlb_d_side in module/entity m14k_cpz does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz.v:651]
-INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz' (32#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cpz' (31#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cpz.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'm14k_cdmm_ctl' (32#1) [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cdmm_ctl.v:75]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3848] Net CP1_gprs_0 in module/entity m14k_cp1_stub does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cp1_stub.v:210]
 WARNING: [Synth 8-3848] Net CP1_gpr_0 in module/entity m14k_cp1_stub does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_cp1_stub.v:211]
@@ -806,9 +803,7 @@ CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'ram_p2.txt';
 	Parameter ADDR_WIDTH bound to: 16 - type: integer 
 CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'ram_p3.txt'; please make sure the file is added to project and has read permission, ignoring [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/memories/ram_p3.v:19]
 WARNING: [Synth 8-3936] Found unconnected internal register 'HADDR_d_reg' and it is trimmed from '32' to '18' bits. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/memories/mfp_ahb_p_ram.v:35]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:53]
-WARNING: [Synth 8-5788] Register IO_BotCtrl_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:58]
-WARNING: [Synth 8-5788] Register IO_INT_ACK_reg in module mfp_ahb_gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:47]
 	Parameter ARST_LVL bound to: 1'b0 
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_top.v:164]
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_top.v:192]
@@ -842,7 +837,6 @@ INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mis
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_bit_ctrl.v:410]
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_byte_ctrl.v:230]
 INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/verilog/i2c_master_byte_ctrl.v:230]
-WARNING: [Synth 8-6014] Unused sequential element HTRANS_d_reg was removed.  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/mfp_ahb_i2c.v:54]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:56]
 	Parameter seg_a bound to: 7'b0111111 
 	Parameter seg_b bound to: 7'b1011111 
@@ -866,9 +860,8 @@ INFO: [Synth 8-226] default block is never used [/home/rew/Documents/final_proje
 WARNING: [Synth 8-5788] Register SEG7_4_reg in module mfp_ahb_seven_seg_ctrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:63]
 WARNING: [Synth 8-5788] Register SEG3_0_reg in module mfp_ahb_seven_seg_ctrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:67]
 WARNING: [Synth 8-5788] Register SEG_DP_reg in module mfp_ahb_seven_seg_ctrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:71]
-WARNING: [Synth 8-3848] Net gscanin in module/entity mfp_sys does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:128]
-WARNING: [Synth 8-3848] Net BistIn in module/entity mfp_sys does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:148]
-WARNING: [Synth 8-350] instance 'mfp_sys' of module 'mfp_sys' requires 28 connections, but only 27 given [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:90]
+WARNING: [Synth 8-3848] Net gscanin in module/entity mfp_sys does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:122]
+WARNING: [Synth 8-3848] Net BistIn in module/entity mfp_sys does not have driver. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:142]
 	Parameter CLK_FREQUENCY_HZ bound to: 50000000 - type: integer 
 	Parameter DEBOUNCE_FREQUENCY_HZ bound to: 250 - type: integer 
 	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
@@ -898,52 +891,28 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Doc
 INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/debounce.v:125]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/debounce.v:126]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/debounce.v:127]
-	Parameter HORIZ_PIXELS bound to: 1024 - type: integer 
-	Parameter HCNT_MAX bound to: 1327 - type: integer 
-	Parameter HSYNC_START bound to: 1053 - type: integer 
-	Parameter HSYNC_END bound to: 1189 - type: integer 
-	Parameter VERT_PIXELS bound to: 768 - type: integer 
-	Parameter VCNT_MAX bound to: 805 - type: integer 
-	Parameter VSYNC_START bound to: 773 - type: integer 
-	Parameter VSYNC_END bound to: 779 - type: integer 
-	Parameter width bound to: 9 - type: integer 
-	Parameter divisor bound to: 3 - type: integer 
-WARNING: [Synth 8-689] width (7) of port connection 'quotient' does not match port width (9) of module 'integer_divide_lut' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/boards/nexys4_ddr/mfp_nexys4_ddr.v:187]
-	Parameter wc_back_key bound to: 2'b00 
-	Parameter wc_line_key bound to: 2'b01 
-	Parameter wc_obs_key bound to: 2'b10 
-	Parameter wc_res_key bound to: 2'b11 
-	Parameter icon_trans_key bound to: 2'b00 
-	Parameter icon1 bound to: 2'b01 
-	Parameter icon2 bound to: 2'b10 
-	Parameter icon3 bound to: 2'b11 
-	Parameter white bound to: 12'b111111111111 
-	Parameter green bound to: 12'b000011110000 
-	Parameter black bound to: 12'b000000000000 
-	Parameter red bound to: 12'b111100000000 
-	Parameter blue bound to: 12'b000000001111 
-	Parameter yellow bound to: 12'b111111110000 
-	Parameter violet bound to: 12'b111100001111 
-	Parameter teal bound to: 12'b000011111111 
-INFO: [Synth 8-226] default block is never used [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/colorizer.v:39]
-	Parameter tile bound to: 4 - type: integer 
-INFO: [Synth 8-3876] $readmem data file '/home/rew/icon.mem' is read successfully [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/icon.v:70]
-INFO: [Synth 8-3876] $readmem data file '/home/rew/icon_diag.mem' is read successfully [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/icon.v:71]
-	Parameter width bound to: 12 - type: integer 
-	Parameter divisor bound to: 3 - type: integer 
-WARNING: [Synth 8-689] width (9) of port connection 'quotient' does not match port width (12) of module 'integer_divide_lut__parameterized0' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/icon.v:39]
-INFO: [Synth 8-226] default block is never used [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/icon.v:88]
-WARNING: [Synth 8-3331] design icon has unconnected port pix_row[11]
-WARNING: [Synth 8-3331] design icon has unconnected port pix_col[11]
-WARNING: [Synth 8-3331] design icon has unconnected port pix_col[10]
-WARNING: [Synth 8-3331] design icon has unconnected port pix_col[0]
-WARNING: [Synth 8-3331] design icon has unconnected port LocX_reg[7]
-WARNING: [Synth 8-3331] design icon has unconnected port LocY_reg[7]
-WARNING: [Synth 8-3331] design icon has unconnected port BotInfo_reg[7]
-WARNING: [Synth 8-3331] design icon has unconnected port BotInfo_reg[6]
-WARNING: [Synth 8-3331] design icon has unconnected port BotInfo_reg[5]
-WARNING: [Synth 8-3331] design icon has unconnected port BotInfo_reg[4]
-WARNING: [Synth 8-3331] design icon has unconnected port BotInfo_reg[3]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter COLS bound to: 640 - type: integer 
+	Parameter ROWS bound to: 480 - type: integer 
+WARNING: [Synth 8-3848] Net memclk in module/entity camera_decoder does not have driver. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_decoder.v:31]
+WARNING: [Synth 8-350] instance 'cam' of module 'camera_decoder' requires 11 connections, but only 8 given [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v:21]
+	Parameter COL_MAX bound to: 640 - type: integer 
+	Parameter ROW_MAX bound to: 480 - type: integer 
+	Parameter ADDR_MAX bound to: 307200 - type: integer 
+WARNING: [Synth 8-350] instance 'test_gen' of module 'test_pattern' requires 6 connections, but only 4 given [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v:41]
+	Parameter HORIZ_PIXELS bound to: 640 - type: integer 
+	Parameter HCNT_MAX bound to: 831 - type: integer 
+	Parameter HSYNC_START bound to: 664 - type: integer 
+	Parameter HSYNC_END bound to: 704 - type: integer 
+	Parameter VERT_PIXELS bound to: 480 - type: integer 
+	Parameter VCNT_MAX bound to: 519 - type: integer 
+	Parameter VSYNC_START bound to: 489 - type: integer 
+	Parameter VSYNC_END bound to: 491 - type: integer 
+WARNING: [Synth 8-350] instance 'dtg' of module 'dtg' requires 8 connections, but only 6 given [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v:66]
+WARNING: [Synth 8-3331] design camera_decoder has unconnected port memclk
 WARNING: [Synth 8-3331] design ahb_mux has unconnected port HCLK
 WARNING: [Synth 8-3331] design ahb_decoder has unconnected port HADDR[31]
 WARNING: [Synth 8-3331] design ahb_decoder has unconnected port HADDR[30]
@@ -1033,9 +1002,19 @@ WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[20]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[19]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[18]
 WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[17]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[16]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[15]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[14]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[13]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[12]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[11]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[10]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[9]
+WARNING: [Synth 8-3331] design mfp_ahb_i2c has unconnected port HWDATA[8]
+WARNING: [Synth 8-3331] design mfp_ahb_gpio has unconnected port HWDATA[31]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1616.809 ; gain = 232.742 ; free physical = 7736 ; free virtual = 11186
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1612.801 ; gain = 228.742 ; free physical = 2332 ; free virtual = 6732
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1052,49 +1031,46 @@ WARNING: [Synth 8-3295] tying undriven pin _ie_pipe_out_50_0_:d[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin _ie_pipe_out_50_0_:d[0] to constant 0 [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_mpc_ctl.v:1751]
 WARNING: [Synth 8-3295] tying undriven pin tlbarray:guest_mode to constant 0 [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_tlb.v:526]
 WARNING: [Synth 8-3295] tying undriven pin mpc:cpz_g_iap_um to constant 0 [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/m14k_core.v:2963]
-WARNING: [Synth 8-3295] tying undriven pin top:gscanin[0] to constant 0 [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:197]
-WARNING: [Synth 8-3295] tying undriven pin top:BistIn[0] to constant 0 [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:197]
+WARNING: [Synth 8-3295] tying undriven pin top:gscanin[0] to constant 0 [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:191]
+WARNING: [Synth 8-3295] tying undriven pin top:BistIn[0] to constant 0 [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_sys.v:191]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1616.809 ; gain = 232.742 ; free physical = 7787 ; free virtual = 11237
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1612.801 ; gain = 228.742 ; free physical = 2394 ; free virtual = 6778
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1616.809 ; gain = 232.742 ; free physical = 7787 ; free virtual = 11237
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1612.801 ; gain = 228.742 ; free physical = 2394 ; free virtual = 6778
 ---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/rojobot31_0/rojobot31_0/rojobot31_0_in_context.xdc] for cell 'rojobot31_0'
-Finished Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/rojobot31_0/rojobot31_0/rojobot31_0_in_context.xdc] for cell 'rojobot31_0'
 Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
 Finished Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
-Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'BRAM'
-Finished Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'BRAM'
+Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cam_vga/bram'
+Finished Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cam_vga/bram'
 Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]
-WARNING: [Vivado 12-584] No ports matched 'JA[9]'. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:103]
-WARNING: [Vivado 12-584] No ports matched 'JA[10]'. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:104]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk_virt' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:277]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'tck' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:281]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk_virt' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:280]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'tck' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:284]
 Finished Parsing XDC File [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mfp_nexys4_ddr_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mfp_nexys4_ddr_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/mfp_nexys4_ddr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2012.652 ; gain = 0.000 ; free physical = 7400 ; free virtual = 10850
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2008.637 ; gain = 0.000 ; free physical = 2120 ; free virtual = 6427
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2012.652 ; gain = 0.000 ; free physical = 7400 ; free virtual = 10850
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2008.637 ; gain = 0.000 ; free physical = 2121 ; free virtual = 6428
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2012.652 ; gain = 0.000 ; free physical = 7400 ; free virtual = 10850
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2012.652 ; gain = 0.000 ; free physical = 7400 ; free virtual = 10850
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BRAM' at clock pin 'clkb' is different from the actual clock period '13.333', this can lead to different synthesis results.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2008.637 ; gain = 0.000 ; free physical = 2121 ; free virtual = 6428
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2008.637 ; gain = 0.000 ; free physical = 2121 ; free virtual = 6428
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2012.652 ; gain = 628.586 ; free physical = 7559 ; free virtual = 10990
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2008.637 ; gain = 624.578 ; free physical = 2289 ; free virtual = 6596
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
 ---------------------------------------------------------------------------------
@@ -1102,18 +1078,17 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2012.652 ; gain = 628.586 ; free physical = 7559 ; free virtual = 10990
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2008.637 ; gain = 624.578 ; free physical = 2289 ; free virtual = 6596
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
-Applied set_property DONT_TOUCH = true for rojobot31_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for clk_wiz_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_vga/bram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2012.652 ; gain = 628.586 ; free physical = 7556 ; free virtual = 10986
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2008.637 ; gain = 624.578 ; free physical = 2284 ; free virtual = 6591
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "config0w_cnxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "synci_step0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -1147,8 +1122,6 @@ INFO: [Synth 8-5546] ROM "write" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "in_progress" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "checksum" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "IO_LED" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "IO_BotCtrl" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "IO_INT_ACK" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_bit_ctrl'
 INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_byte_ctrl'
@@ -1188,15 +1161,8 @@ INFO: [Synth 8-5544] ROM "swtch_db" won't be mapped to Block RAM because address
 INFO: [Synth 8-5544] ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "row" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "pixel_row" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "icon" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "icon_diag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "icon" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "icon_diag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "icon" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "icon_diag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "icon" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "icon_diag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-327] inferring latch for variable 'q_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/mvp_latchn.v:90]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -1233,7 +1199,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encodin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2012.652 ; gain = 628.586 ; free physical = 6002 ; free virtual = 9438
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2008.637 ; gain = 624.578 ; free physical = 984 ; free virtual = 5319
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gclk'
 INFO: [Synth 8-223] decloning instance 'mfp_sys/top/cpu/core/clock_gate/buff_fclk' (m14k_clock_buf) to 'mfp_sys/top/cpu/core/clock_gate/buff_gtlbclk'
@@ -1253,8 +1219,8 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     19291|
 |4     |m14k_cpu__GC0       |           1|       114|
 |5     |m14k_top__GC0       |           1|       458|
-|6     |mfp_sys__GC0        |           1|      4203|
-|7     |mfp_nexys4_ddr__GC0 |           1|      7765|
+|6     |mfp_sys__GC0        |           1|      4010|
+|7     |mfp_nexys4_ddr__GC0 |           1|      2814|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1269,13 +1235,13 @@ Detailed RTL Component Info :
 	   2 Input     13 Bit       Adders := 2     
 	   2 Input     12 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 1     
-	   2 Input      9 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 3     
 	   2 Input      8 Bit       Adders := 6     
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 3     
-	   3 Input      5 Bit       Adders := 5     
-	   2 Input      4 Bit       Adders := 11    
-	   3 Input      4 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
 	   2 Input      3 Bit       Adders := 5     
 	   3 Input      2 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 6     
@@ -1302,7 +1268,7 @@ Detailed RTL Component Info :
 	               38 Bit    Registers := 2     
 	               36 Bit    Registers := 5     
 	               34 Bit    Registers := 1     
-	               32 Bit    Registers := 125   
+	               32 Bit    Registers := 126   
 	               30 Bit    Registers := 1     
 	               28 Bit    Registers := 5     
 	               27 Bit    Registers := 33    
@@ -1321,16 +1287,16 @@ Detailed RTL Component Info :
 	               13 Bit    Registers := 5     
 	               12 Bit    Registers := 3     
 	               11 Bit    Registers := 2     
-	               10 Bit    Registers := 9     
+	               10 Bit    Registers := 11    
 	                9 Bit    Registers := 7     
 	                8 Bit    Registers := 75    
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 17    
 	                5 Bit    Registers := 18    
-	                4 Bit    Registers := 80    
+	                4 Bit    Registers := 81    
 	                3 Bit    Registers := 30    
-	                2 Bit    Registers := 47    
-	                1 Bit    Registers := 949   
+	                2 Bit    Registers := 46    
+	                1 Bit    Registers := 947   
 +---RAMs : 
 	             512K Bit         RAMs := 4     
 	               4K Bit         RAMs := 28    
@@ -1343,11 +1309,10 @@ Detailed RTL Component Info :
 	   2 Input     38 Bit        Muxes := 1     
 	   2 Input     36 Bit        Muxes := 1     
 	   2 Input     34 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 181   
+	   2 Input     32 Bit        Muxes := 180   
 	   4 Input     32 Bit        Muxes := 17    
 	   3 Input     32 Bit        Muxes := 1     
 	   5 Input     32 Bit        Muxes := 1     
-	  17 Input     32 Bit        Muxes := 8     
 	   2 Input     30 Bit        Muxes := 8     
 	   2 Input     28 Bit        Muxes := 5     
 	   2 Input     27 Bit        Muxes := 1     
@@ -1357,10 +1322,12 @@ Detailed RTL Component Info :
 	   2 Input     22 Bit        Muxes := 11    
 	   2 Input     21 Bit        Muxes := 1     
 	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 1     
 	   2 Input     18 Bit        Muxes := 9     
 	  18 Input     18 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 3     
-	   2 Input     16 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 10    
+	   3 Input     16 Bit        Muxes := 1     
 	   7 Input     16 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 5     
@@ -1373,7 +1340,7 @@ Detailed RTL Component Info :
 	   3 Input     10 Bit        Muxes := 2     
 	   4 Input      9 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 7     
-	   2 Input      8 Bit        Muxes := 83    
+	   2 Input      8 Bit        Muxes := 85    
 	   4 Input      8 Bit        Muxes := 4     
 	   5 Input      8 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 4     
@@ -1382,11 +1349,10 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 47    
 	   5 Input      5 Bit        Muxes := 1     
 	  24 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 130   
+	   2 Input      4 Bit        Muxes := 131   
 	   3 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 3     
 	   6 Input      4 Bit        Muxes := 1     
-	   9 Input      4 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 62    
 	   3 Input      3 Bit        Muxes := 5     
 	   5 Input      3 Bit        Muxes := 2     
@@ -1395,7 +1361,7 @@ Detailed RTL Component Info :
 	   4 Input      3 Bit        Muxes := 3     
 	  11 Input      3 Bit        Muxes := 1     
 	  15 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 84    
+	   2 Input      2 Bit        Muxes := 90    
 	   3 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 5     
@@ -1403,8 +1369,8 @@ Detailed RTL Component Info :
 	   9 Input      2 Bit        Muxes := 1     
 	  10 Input      2 Bit        Muxes := 1     
 	  11 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 20    
-	   2 Input      1 Bit        Muxes := 502   
+	   4 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 510   
 	   8 Input      1 Bit        Muxes := 1     
 	  11 Input      1 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 23    
@@ -1419,10 +1385,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module mfp_nexys4_ddr 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
 Module mvp_cregister__2 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -8409,14 +8371,13 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module i2c_master_bit_ctrl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -8527,6 +8488,24 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 22    
+Module camera_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module test_pattern 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
 Module dtg 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -8536,22 +8515,13 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module camera_2_vga 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-Module colorizer 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   9 Input      4 Bit        Muxes := 3     
-Module icon 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      9 Bit       Adders := 4     
-	   3 Input      5 Bit       Adders := 4     
-	   2 Input      4 Bit       Adders := 6     
-	   3 Input      4 Bit       Adders := 2     
-+---Registers : 
-	                2 Bit    Registers := 1     
-+---Muxes : 
-	  17 Input     32 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -8575,13 +8545,14 @@ INFO: [Synth 8-5587] ROM size for "address" is below threshold of ROM address wi
 INFO: [Synth 8-5546] ROM "in_progress" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-4471] merging register 'mfp_ahb_p_ram/HTRANS_d_reg[1:0]' into 'mfp_ahb_b_ram/HTRANS_d_reg[1:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/memories/mfp_ahb_p_ram.v:38]
 INFO: [Synth 8-4471] merging register 'mfp_ahb_p_ram/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/memories/mfp_ahb_p_ram.v:36]
-INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HTRANS_d_reg[1:0]' into 'mfp_ahb_b_ram/HTRANS_d_reg[1:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:43]
-INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:41]
-INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HADDR_d_reg[3:0]' into 'i2c/HADDR_d_reg[3:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:40]
-INFO: [Synth 8-4471] merging register 'i2c/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/mfp_ahb_i2c.v:52]
-INFO: [Synth 8-4471] merging register 'i2c/HADDR_d_reg[3:0]' into 'mfp_ahb_seven_seg_ctrl/HADDR_d_reg[3:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:40]
+INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HTRANS_d_reg[1:0]' into 'mfp_ahb_b_ram/HTRANS_d_reg[1:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:37]
+INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:35]
+INFO: [Synth 8-4471] merging register 'mfp_ahb_gpio/HADDR_d_reg[3:0]' into 'i2c/HADDR_d_reg[3:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:34]
+INFO: [Synth 8-4471] merging register 'i2c/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/new/mfp_ahb_i2c.v:46]
+INFO: [Synth 8-4471] merging register 'i2c/HADDR_d_reg[3:0]' into 'mfp_ahb_seven_seg_ctrl/HADDR_d_reg[3:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/system/mfp_ahb_gpio.v:34]
 INFO: [Synth 8-4471] merging register 'mfp_ahb_seven_seg_ctrl/HTRANS_d_reg[1:0]' into 'mfp_ahb_b_ram/HTRANS_d_reg[1:0]' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:41]
 INFO: [Synth 8-4471] merging register 'mfp_ahb_seven_seg_ctrl/HWRITE_d_reg' into 'mfp_ahb_b_ram/HWRITE_d_reg' [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/simplebot/mfp_ahb_seven_seg_ctrl.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cam_vga/cam/addr_reg' and it is trimmed from '32' to '19' bits. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_decoder.v:65]
 INFO: [Synth 8-5544] ROM "debounce/swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "debounce/swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "debounce/swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -8600,7 +8571,8 @@ INFO: [Synth 8-5544] ROM "debounce/swtch_db" won't be mapped to Block RAM becaus
 INFO: [Synth 8-5544] ROM "debounce/swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "debounce/db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "debounce/shift_pb0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "dtg/pixel_row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cam_vga/cam/row" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "cam_vga/dtg/pixel_row" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3936] Found unconnected internal register 'icache/tagram/ram__tag_inst1/DO_reg' and it is trimmed from '16' to '8' bits. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/RAMB4K_S16.v:83]
 INFO: [Synth 8-5784] Optimized 0 bits of RAM "icache/tagram/ram__tag_inst1/mem_reg" due to constant propagation. Old ram width 8 bits, new ram width 8 bits.
 WARNING: [Synth 8-3936] Found unconnected internal register 'icache/tagram/ram__tag_inst3/DO_reg' and it is trimmed from '16' to '8' bits. [/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hardware/core/RAMB4K_S16.v:83]
@@ -8814,6 +8786,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_3/b
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_3/dcc/\_dcc_parerr_ev_reg/q_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_3/biu/\_HBURST_2_0_/q_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_3/dcc/\_cp2_storeissued_m_legit/q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mfp_sysi_6/\mfp_ahb_withloader/mfp_ahb/mfp_ahb_gpio/HRDATA_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/mpc/\mpc_ctl/_mpc_macro_m/q_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/cpz/cpz_pc/\alu_cp0_pc1/_pc_cnt_evt_reg_255_0_/cregister/register_inst/q_reg[28] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (corei_1/cpz/\_cdmmbase_31_0_/cregister/cregister/q_reg[1] )
@@ -8821,26 +8794,14 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/c
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/cpz/\_config7_hci_udi_present_reg_ic_present_reg_dc_present_reg_ic_ssize_reg_1_0_dc_ssize_reg_1_0_ic_nsets_reg_2_0_dc_nsets_reg_2_0/cregister/cregister/q_reg[5] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (corei_1/cpz/\_config7_hci_udi_present_reg_ic_present_reg_dc_present_reg_ic_ssize_reg_1_0_dc_ssize_reg_1_0_ic_nsets_reg_2_0_dc_nsets_reg_2_0/cregister/cregister/q_reg[11] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/cpz/\_cdmmbase_31_0_/cregister/cregister/q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (corei_1/cpz/\_cpz_taglo_0_0_/q_reg[0] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (gate_clockgate_hclk/_len/q_reg[0]) is unused and will be removed from module m14k_biu.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:12 ; elapsed = 00:06:23 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5195 ; free virtual = 8788
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:29 ; elapsed = 00:07:41 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1396 ; free virtual = 4937
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-
-ROM:
-+-------------------+------------+---------------+----------------+
-|Module Name        | RTL Object | Depth x Width | Implemented As | 
-+-------------------+------------+---------------+----------------+
-|integer_divide_lut | p_0_out    | 512x9         | LUT            | 
-|integer_divide_lut | p_0_out    | 4096x12       | LUT            | 
-|integer_divide_lut | p_0_out    | 4096x12       | LUT            | 
-|mfp_nexys4_ddr     | p_0_out    | 512x9         | Block RAM      | 
-+-------------------+------------+---------------+----------------+
-
 
 Block RAM: Preliminary Mapping  Report (see note below)
 +------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
@@ -8955,7 +8916,6 @@ INFO: [Synth 8-6837] The timing for the instance mfp_sysi_6/i_25/mfp_ahb_withloa
 INFO: [Synth 8-6837] The timing for the instance mfp_sysi_6/i_25/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p3/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance mfp_sysi_6/i_25/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p3/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance mfp_sysi_6/i_25/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p3/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_0/i_30/i_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +------+--------------------+------------+----------+
@@ -8966,24 +8926,24 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     12647|
 |4     |m14k_cpu__GC0       |           1|        93|
 |5     |m14k_top__GC0       |           1|       439|
-|6     |mfp_sys__GC0        |           1|      2285|
-|7     |mfp_nexys4_ddr__GC0 |           1|      1493|
+|6     |mfp_sys__GC0        |           1|      2052|
+|7     |mfp_nexys4_ddr__GC0 |           1|       891|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out1' to pin 'clk_wiz_0/bbstub_clk_out1/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out2' to pin 'clk_wiz_0/bbstub_clk_out2/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_out3' to pin 'clk_wiz_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_31_5MHz' to pin 'clk_wiz_0/bbstub_clk_31_5MHz/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_50MHz' to pin 'clk_wiz_0/bbstub_clk_50MHz/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0/clk_75MHz' to pin 'clk_wiz_0/bbstub_clk_75MHz/O'
 INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:17 ; elapsed = 00:06:28 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5117 ; free virtual = 8710
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:35 ; elapsed = 00:07:47 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1149 ; free virtual = 4709
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:06:20 ; elapsed = 00:06:31 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5102 ; free virtual = 8697
+Finished Timing Optimization : Time (s): cpu = 00:07:38 ; elapsed = 00:07:50 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1152 ; free virtual = 4723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -9050,8 +9010,8 @@ Report RTL Partitions:
 |3     |m14k_core__GB2      |           1|     12647|
 |4     |m14k_cpu__GC0       |           1|        93|
 |5     |m14k_top__GC0       |           1|       439|
-|6     |mfp_sys__GC0        |           1|      2285|
-|7     |mfp_nexys4_ddr__GC0 |           1|      1493|
+|6     |mfp_sys__GC0        |           1|      2052|
+|7     |mfp_nexys4_ddr__GC0 |           1|       891|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -9095,9 +9055,10 @@ INFO: [Synth 8-6837] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_
 INFO: [Synth 8-6837] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p1/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p1/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p1/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/ram_p1/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:06:31 ; elapsed = 00:06:42 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5183 ; free virtual = 8734
+Finished Technology Mapping : Time (s): cpu = 00:07:50 ; elapsed = 00:08:03 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1261 ; free virtual = 4819
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9125,7 +9086,7 @@ INFO: [Synth 8-6064] Net \mfp_sys/mfp_ahb_withloader/mfp_ahb/mfp_ahb_p_ram/we_ma
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:06:33 ; elapsed = 00:06:43 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5182 ; free virtual = 8733
+Finished IO Insertion : Time (s): cpu = 00:07:52 ; elapsed = 00:08:04 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1265 ; free virtual = 4824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -9138,7 +9099,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:06:33 ; elapsed = 00:06:43 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5182 ; free virtual = 8733
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:52 ; elapsed = 00:08:04 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1263 ; free virtual = 4822
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9150,25 +9111,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:36 ; elapsed = 00:06:47 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5142 ; free virtual = 8693
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:56 ; elapsed = 00:08:08 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1254 ; free virtual = 4813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:06:36 ; elapsed = 00:06:47 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5097 ; free virtual = 8648
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:56 ; elapsed = 00:08:09 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1253 ; free virtual = 4812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:06:37 ; elapsed = 00:06:48 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5110 ; free virtual = 8661
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:57 ; elapsed = 00:08:09 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1250 ; free virtual = 4810
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:06:37 ; elapsed = 00:06:48 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5129 ; free virtual = 8680
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:57 ; elapsed = 00:08:10 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1250 ; free virtual = 4810
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -9198,8 +9159,6 @@ Report BlackBoxes:
 +------+--------------+----------+
 |1     |clk_wiz_0     |         1|
 |2     |blk_mem_gen_0 |         1|
-|3     |rojobot31_0   |         1|
-|4     |world_map     |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -9208,59 +9167,56 @@ Report Cell Usage:
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
 |2     |clk_wiz_0     |     1|
-|3     |rojobot31_0   |     1|
-|4     |world_map     |     1|
-|5     |BUFG          |     1|
-|6     |CARRY4        |   174|
-|7     |LUT1          |    94|
-|8     |LUT2          |   652|
-|9     |LUT3          |  1307|
-|10    |LUT4          |  1571|
-|11    |LUT5          |  2695|
-|12    |LUT6          |  5039|
-|13    |MUXF7         |   278|
-|14    |MUXF8         |     2|
-|15    |RAM128X1S     |     3|
-|16    |RAMB18E1      |    24|
-|17    |RAMB18E1_1    |     4|
-|18    |RAMB18E1_2    |     1|
-|19    |RAMB36E1      |    32|
-|20    |RAMB36E1_1    |    32|
-|21    |SRL16E        |     9|
-|22    |FDCE          |   213|
-|23    |FDPE          |    51|
-|24    |FDRE          |  8576|
-|25    |FDSE          |    43|
-|26    |IBUF          |    28|
-|27    |IOBUF         |     2|
-|28    |OBUF          |    71|
+|3     |BUFG          |     2|
+|4     |CARRY4        |   194|
+|5     |LUT1          |   102|
+|6     |LUT2          |   647|
+|7     |LUT3          |  1338|
+|8     |LUT4          |  1598|
+|9     |LUT5          |  2669|
+|10    |LUT6          |  4985|
+|11    |MUXF7         |   269|
+|12    |RAM128X1S     |     3|
+|13    |RAMB18E1      |    24|
+|14    |RAMB18E1_1    |     4|
+|15    |RAMB36E1      |    32|
+|16    |RAMB36E1_1    |    32|
+|17    |SRL16E        |     9|
+|18    |FDCE          |   213|
+|19    |FDPE          |    51|
+|20    |FDRE          |  8732|
+|21    |FDSE          |    43|
+|22    |IBUF          |    34|
+|23    |IBUFG         |     1|
+|24    |IOBUF         |     2|
+|25    |OBUF          |    47|
 +------+--------------+------+
 
 Report Instance Areas: 
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 |      |Instance                                                                                     |Module                                     |Cells |
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
-|1     |top                                                                                          |                                           | 21020|
-|2     |  color                                                                                      |colorizer                                  |     3|
-|3     |  debounce                                                                                   |debounce                                   |   183|
-|4     |  dtg                                                                                        |dtg                                        |   196|
-|5     |  icon                                                                                       |icon                                       |    39|
-|6     |    div                                                                                      |integer_divide_lut__parameterized0         |    22|
-|7     |  mfp_sys                                                                                    |mfp_sys                                    | 20376|
-|8     |    mfp_ahb_withloader                                                                       |mfp_ahb_withloader                         |  1245|
-|9     |      mfp_ahb                                                                                |mfp_ahb                                    |   725|
-|10    |        i2c                                                                                  |mfp_ahb_i2c                                |   347|
-|11    |          i2c                                                                                |i2c_master_top                             |   346|
+|1     |top                                                                                          |                                           | 21038|
+|2     |  cam_vga                                                                                    |camera_2_vga                               |   369|
+|3     |    cam                                                                                      |camera_decoder                             |   156|
+|4     |    dtg                                                                                      |dtg                                        |    89|
+|5     |    test_gen                                                                                 |test_pattern                               |   115|
+|6     |  debounce                                                                                   |debounce                                   |   184|
+|7     |  mfp_sys                                                                                    |mfp_sys                                    | 20395|
+|8     |    mfp_ahb_withloader                                                                       |mfp_ahb_withloader                         |  1259|
+|9     |      mfp_ahb                                                                                |mfp_ahb                                    |   722|
+|10    |        i2c                                                                                  |mfp_ahb_i2c                                |   346|
+|11    |          i2c                                                                                |i2c_master_top                             |   345|
 |12    |            byte_controller                                                                  |i2c_master_byte_ctrl                       |   266|
 |13    |              bit_controller                                                                 |i2c_master_bit_ctrl                        |   211|
-|14    |        mfp_ahb_b_ram                                                                        |mfp_ahb_b_ram                              |    45|
-|15    |          ram_b0                                                                             |ram_b0                                     |     6|
+|14    |        mfp_ahb_b_ram                                                                        |mfp_ahb_b_ram                              |    41|
+|15    |          ram_b0                                                                             |ram_b0                                     |     2|
 |16    |          ram_b1                                                                             |ram_b1                                     |     2|
 |17    |          ram_b2                                                                             |ram_b2                                     |     2|
 |18    |          ram_b3                                                                             |ram_b3                                     |     2|
-|19    |        mfp_ahb_gpio                                                                         |mfp_ahb_gpio                               |    46|
-|20    |        mfp_ahb_p_ram                                                                        |mfp_ahb_p_ram                              |   163|
-|21    |          ram_p0                                                                             |ram_p0                                     |    16|
+|19    |        mfp_ahb_gpio                                                                         |mfp_ahb_gpio                               |    40|
+|20    |        mfp_ahb_p_ram                                                                        |mfp_ahb_p_ram                              |   172|
+|21    |          ram_p0                                                                             |ram_p0                                     |    24|
 |22    |          ram_p1                                                                             |ram_p1                                     |    24|
 |23    |          ram_p2                                                                             |ram_p2                                     |    24|
 |24    |          ram_p3                                                                             |ram_p3                                     |    24|
@@ -9268,19 +9224,19 @@ Report Instance Areas:
 |26    |          mfp_ahb_sevensegtimer                                                              |mfp_ahb_sevensegtimer                      |    60|
 |27    |            counter16                                                                        |counter                                    |    21|
 |28    |            counterSel                                                                       |counter__parameterized0                    |    39|
-|29    |      mfp_srec_parser                                                                        |mfp_srec_parser                            |   330|
+|29    |      mfp_srec_parser                                                                        |mfp_srec_parser                            |   314|
 |30    |      mfp_srec_parser_to_ahb_lite_bridge                                                     |mfp_srec_parser_to_ahb_lite_bridge         |    64|
-|31    |      mfp_uart_receiver                                                                      |mfp_uart_receiver                          |   126|
+|31    |      mfp_uart_receiver                                                                      |mfp_uart_receiver                          |   159|
 |32    |    mfp_ejtag_reset                                                                          |mfp_ejtag_reset                            |    12|
-|33    |    top                                                                                      |m14k_top                                   | 19119|
-|34    |      cpu                                                                                    |m14k_cpu                                   | 18813|
-|35    |        core                                                                                 |m14k_core                                  | 18714|
-|36    |          biu                                                                                |m14k_biu                                   |  1456|
-|37    |            _HADDR_31_0_                                                                     |mvp_cregister_wide__parameterized2_1266    |   258|
-|38    |              cregister                                                                      |mvp_cregister_ngc__parameterized2_1392     |   258|
-|39    |                cregister                                                                    |mvp_cregister__parameterized3_1393         |   258|
+|33    |    top                                                                                      |m14k_top                                   | 19124|
+|34    |      cpu                                                                                    |m14k_cpu                                   | 18818|
+|35    |        core                                                                                 |m14k_core                                  | 18719|
+|36    |          biu                                                                                |m14k_biu                                   |  1461|
+|37    |            _HADDR_31_0_                                                                     |mvp_cregister_wide__parameterized2_1266    |   259|
+|38    |              cregister                                                                      |mvp_cregister_ngc__parameterized2_1392     |   259|
+|39    |                cregister                                                                    |mvp_cregister__parameterized3_1393         |   259|
 |40    |            _HBURST_2_0_                                                                     |mvp_cregister__parameterized14_1267        |     1|
-|41    |            _HSIZE_2_0_                                                                      |mvp_cregister__parameterized14_1268        |     2|
+|41    |            _HSIZE_2_0_                                                                      |mvp_cregister__parameterized14_1268        |     6|
 |42    |            _HTRANS_1_0_                                                                     |mvp_cregister__parameterized8_1269         |     6|
 |43    |            _HWDATA_31_0_                                                                    |mvp_cregister_wide__parameterized2_1270    |    45|
 |44    |              cregister                                                                      |mvp_cregister_ngc__parameterized2_1390     |    45|
@@ -9304,8 +9260,8 @@ Report Instance Areas:
 |62    |            _dcc_ev_force_move_reg                                                           |mvp_register_1280                          |     7|
 |63    |            _dcc_exaddr_sel_reg                                                              |mvp_register_1281                          |     1|
 |64    |            _dreq_a_st0_reg                                                                  |mvp_cregister__parameterized1_1282         |     1|
-|65    |            _dreq_a_st3_reg                                                                  |mvp_cregister__parameterized1_1283         |     3|
-|66    |            _dreq_d_st0_reg                                                                  |mvp_cregister__parameterized1_1284         |     1|
+|65    |            _dreq_d_st0_reg                                                                  |mvp_cregister__parameterized1_1283         |     1|
+|66    |            _dreq_d_st2_reg                                                                  |mvp_cregister__parameterized1_1284         |     3|
 |67    |            _dreq_d_st3_reg                                                                  |mvp_cregister__parameterized1_1285         |     2|
 |68    |            _dreq_st0_reg                                                                    |mvp_cregister__parameterized1_1286         |     6|
 |69    |            _dreq_st1_reg                                                                    |mvp_cregister__parameterized1_1287         |     2|
@@ -10893,48 +10849,31 @@ Report Instance Areas:
 |1651  |        _udi_in_m                                                                            |mvp_cregister__parameterized1              |     1|
 +------+---------------------------------------------------------------------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:06:37 ; elapsed = 00:06:48 . Memory (MB): peak = 2680.699 ; gain = 1296.633 ; free physical = 5137 ; free virtual = 8688
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:57 ; elapsed = 00:08:10 . Memory (MB): peak = 2665.668 ; gain = 1281.609 ; free physical = 1250 ; free virtual = 4810
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:06:29 ; elapsed = 00:06:44 . Memory (MB): peak = 2684.609 ; gain = 904.699 ; free physical = 6866 ; free virtual = 10426
-Synthesis Optimization Complete : Time (s): cpu = 00:06:38 ; elapsed = 00:06:52 . Memory (MB): peak = 2684.609 ; gain = 1300.543 ; free physical = 6866 ; free virtual = 10426
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:49 ; elapsed = 00:08:06 . Memory (MB): peak = 2669.578 ; gain = 889.684 ; free physical = 2958 ; free virtual = 6526
+Synthesis Optimization Complete : Time (s): cpu = 00:07:58 ; elapsed = 00:08:15 . Memory (MB): peak = 2669.578 ; gain = 1285.520 ; free physical = 2959 ; free virtual = 6527
 INFO: [Project 1-571] Translating synthesized netlist
-Release 14.7 - ngc2edif P_INT.20180726 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-
-Release 14.7 - ngc2edif P_INT.20180726 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-Reading design world_map.ngc ...
-WARNING:NetListWriters:298 - No output is written to world_map.xncf, ignored.
-Processing design ...
-   Preping design's networks ...
-   Preping design's macros ...
-  finished :Prep
-Writing EDIF netlist file world_map.edif ...
-ngc2edif: Total memory usage is 104704 kilobytes
-
-Reading core file '/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hdl_part1/world_maps_part1/world_map.ngc' for (cell view 'world_map', library 'work')
-Parsing EDIF File [./.ngc2edfcache/world_map_ngc_5932e8e8.edif]
-Finished Parsing EDIF File [./.ngc2edfcache/world_map_ngc_5932e8e8.edif]
-INFO: [Netlist 29-17] Analyzing 553 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 561 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180726
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2720.719 ; gain = 0.000 ; free physical = 6788 ; free virtual = 10348
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2705.688 ; gain = 0.000 ; free physical = 2860 ; free virtual = 6431
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 5 instances were transformed.
+  A total of 6 instances were transformed.
+  IBUFG => IBUF: 1 instances
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-738 Infos, 193 Warnings, 8 Critical Warnings and 0 Errors encountered.
+727 Infos, 185 Warnings, 8 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:44 ; elapsed = 00:06:58 . Memory (MB): peak = 2720.719 ; gain = 1336.730 ; free physical = 6860 ; free virtual = 10420
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2720.719 ; gain = 0.000 ; free physical = 6860 ; free virtual = 10420
+synth_design: Time (s): cpu = 00:08:03 ; elapsed = 00:08:20 . Memory (MB): peak = 2705.688 ; gain = 1321.707 ; free physical = 2943 ; free virtual = 6516
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2705.688 ; gain = 0.000 ; free physical = 2944 ; free virtual = 6517
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/mfp_nexys4_ddr.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2744.730 ; gain = 24.012 ; free physical = 6612 ; free virtual = 10249
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2729.699 ; gain = 24.012 ; free physical = 2856 ; free virtual = 6488
 INFO: [runtcl-4] Executing : report_utilization -file mfp_nexys4_ddr_utilization_synth.rpt -pb mfp_nexys4_ddr_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 23 22:01:54 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 24 22:53:47 2019...

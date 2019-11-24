@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sun Nov 24 00:46:21 2019
+| Date         : Sun Nov 24 17:11:29 2019
 | Host         : rew-desktop running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_control_sets -verbose -file mfp_nexys4_ddr_control_sets_placed.rpt
 | Design       : mfp_nexys4_ddr
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     8 |
-| Unused register locations in slices containing registers |    37 |
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    51 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,11 +34,11 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            1 |
+|      4 |            2 |
 |     10 |            2 |
 |     12 |            1 |
 |     15 |            1 |
-|    16+ |            3 |
+|    16+ |            7 |
 +--------+--------------+
 
 
@@ -48,29 +48,34 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              18 |           11 |
+| No           | No                    | No                     |              37 |           19 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              44 |           13 |
-| Yes          | No                    | No                     |               4 |            4 |
+| No           | Yes                   | No                     |              76 |           21 |
+| Yes          | No                    | No                     |               4 |            3 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              41 |           11 |
+| Yes          | Yes                   | No                     |              96 |           24 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+-----------------+------------------------------+------------------+----------------+
-|           Clock Signal          |  Enable Signal  |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
-+---------------------------------+-----------------+------------------------------+------------------+----------------+
-|  instance_name/inst/clk_10MHz   | CPU_RESETN_IBUF |                              |                4 |              4 |
-|  instance_name/inst/clk_10MHz   |                 | test/col[9]_i_1_n_0          |                3 |             10 |
-|  instance_name/inst/clk_10MHz   | test/row0       | test/row[9]_i_1_n_0          |                3 |             10 |
-|  instance_name/inst/clk_31_5MHz | dtg/pixel_row   | dtg/pixel_row[0]_i_1_n_0     |                3 |             12 |
-|  instance_name/inst/clk_31_5MHz |                 | dtg/pixel_column[11]_i_1_n_0 |                5 |             15 |
-|  instance_name/inst/clk_31_5MHz |                 |                              |               11 |             18 |
-|  instance_name/inst/clk_10MHz   |                 | test/addr[0]_i_1_n_0         |                5 |             19 |
-|  instance_name/inst/clk_31_5MHz | dtg/pix_num0    | dtg/pix_num[0]_i_1_n_0       |                5 |             19 |
-+---------------------------------+-----------------+------------------------------+------------------+----------------+
++---------------------------------+-----------------------------+--------------------------------------+------------------+----------------+
+|           Clock Signal          |        Enable Signal        |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++---------------------------------+-----------------------------+--------------------------------------+------------------+----------------+
+|  instance_name/inst/clk_31_5MHz | CPU_RESETN_IBUF             |                                      |                3 |              4 |
+|  pix_clk                        | cam_vga/cam/dout[7]_i_2_n_0 | cam_vga/cam/dout[7]_i_1_n_0          |                1 |              4 |
+|  instance_name/inst/clk_31_5MHz |                             | cam_vga/test_gen/col[9]_i_1_n_0      |                3 |             10 |
+|  instance_name/inst/clk_31_5MHz | cam_vga/test_gen/row0       | cam_vga/test_gen/row[9]_i_1_n_0      |                2 |             10 |
+|  instance_name/inst/clk_31_5MHz | cam_vga/dtg/pixel_row       | cam_vga/dtg/pixel_row[0]_i_1_n_0     |                3 |             12 |
+|  instance_name/inst/clk_31_5MHz |                             | cam_vga/dtg/pixel_column[11]_i_1_n_0 |                5 |             15 |
+|  instance_name/inst/clk_31_5MHz |                             |                                      |               13 |             18 |
+|  instance_name/inst/clk_31_5MHz |                             | cam_vga/test_gen/addr[0]_i_1_n_0     |                5 |             19 |
+|  instance_name/inst/clk_31_5MHz | cam_vga/dtg/pix_num0        | cam_vga/dtg/pix_num[0]_i_1_n_0       |                5 |             19 |
+|  pix_clk                        |                             |                                      |                6 |             19 |
+|  pix_clk                        | cam_vga/cam/pix_cnt0        | cam_vga/cam/pix_cnt[0]_i_1_n_0       |                5 |             19 |
+|  pix_clk                        |                             | cam_vga/cam/col[0]_i_1_n_0           |                8 |             32 |
+|  pix_clk                        | cam_vga/cam/row             | cam_vga/cam/row[0]_i_1_n_0           |                8 |             32 |
++---------------------------------+-----------------------------+--------------------------------------+------------------+----------------+
 
 

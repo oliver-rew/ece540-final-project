@@ -14,21 +14,37 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23065 
+INFO: Helper process launched with PID 13138 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1389.059 ; gain = 0.000 ; free physical = 2816 ; free virtual = 7585
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1380.062 ; gain = 0.000 ; free physical = 4460 ; free virtual = 9467
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:2]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [/home/rew/Documents/final_project/camera/camera.runs/synth_1/.Xil/Vivado-23047-rew-desktop/realtime/clk_wiz_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (1#1) [/home/rew/Documents/final_project/camera/camera.runs/synth_1/.Xil/Vivado-23047-rew-desktop/realtime/clk_wiz_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'test_pattern' [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/test_pattern.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [/home/rew/Documents/final_project/camera/camera.runs/synth_1/.Xil/Vivado-13110-rew-desktop/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (1#1) [/home/rew/Documents/final_project/camera/camera.runs/synth_1/.Xil/Vivado-13110-rew-desktop/realtime/clk_wiz_1_stub.v:5]
+WARNING: [Synth 8-350] instance 'instance_name' of module 'clk_wiz_1' requires 3 connections, but only 2 given [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:75]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (2#1) [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/home/rew/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'camera_2_vga' [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v:1]
+INFO: [Synth 8-6157] synthesizing module 'camera_decoder' [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_decoder.v:25]
+	Parameter COLS bound to: 640 - type: integer 
+	Parameter ROWS bound to: 480 - type: integer 
+WARNING: [Synth 8-3848] Net memclk in module/entity camera_decoder does not have driver. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_decoder.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'camera_decoder' (4#1) [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_decoder.v:25]
+WARNING: [Synth 8-350] instance 'cam' of module 'camera_decoder' requires 11 connections, but only 8 given [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v:21]
+INFO: [Synth 8-6157] synthesizing module 'test_pattern' [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/test_pattern.v:5]
 	Parameter COL_MAX bound to: 640 - type: integer 
 	Parameter ROW_MAX bound to: 480 - type: integer 
 	Parameter ADDR_MAX bound to: 307200 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'test_pattern' (2#1) [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/test_pattern.v:1]
-WARNING: [Synth 8-350] instance 'test' of module 'test_pattern' requires 6 connections, but only 4 given [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:75]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/rew/Documents/final_project/camera/camera.runs/synth_1/.Xil/Vivado-23047-rew-desktop/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [/home/rew/Documents/final_project/camera/camera.runs/synth_1/.Xil/Vivado-23047-rew-desktop/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'test_pattern' (5#1) [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/test_pattern.v:5]
+WARNING: [Synth 8-350] instance 'test_gen' of module 'test_pattern' requires 6 connections, but only 4 given [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v:41]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/rew/Documents/final_project/camera/camera.runs/synth_1/.Xil/Vivado-13110-rew-desktop/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (6#1) [/home/rew/Documents/final_project/camera/camera.runs/synth_1/.Xil/Vivado-13110-rew-desktop/realtime/blk_mem_gen_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'dtg' [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/imports/hdl_part2/dtg.v:30]
 	Parameter HORIZ_PIXELS bound to: 640 - type: integer 
 	Parameter HCNT_MAX bound to: 831 - type: integer 
@@ -38,7 +54,9 @@ INFO: [Synth 8-6157] synthesizing module 'dtg' [/home/rew/Documents/final_projec
 	Parameter VCNT_MAX bound to: 519 - type: integer 
 	Parameter VSYNC_START bound to: 489 - type: integer 
 	Parameter VSYNC_END bound to: 491 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'dtg' (4#1) [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/imports/hdl_part2/dtg.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'dtg' (7#1) [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/imports/hdl_part2/dtg.v:30]
+WARNING: [Synth 8-350] instance 'dtg' of module 'dtg' requires 8 connections, but only 6 given [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'camera_2_vga' (8#1) [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v:1]
 WARNING: [Synth 8-3848] Net LED in module/entity mfp_nexys4_ddr does not have driver. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:7]
 WARNING: [Synth 8-3848] Net CA in module/entity mfp_nexys4_ddr does not have driver. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:10]
 WARNING: [Synth 8-3848] Net CB in module/entity mfp_nexys4_ddr does not have driver. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:10]
@@ -49,7 +67,8 @@ WARNING: [Synth 8-3848] Net CF in module/entity mfp_nexys4_ddr does not have dri
 WARNING: [Synth 8-3848] Net CG in module/entity mfp_nexys4_ddr does not have driver. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:10]
 WARNING: [Synth 8-3848] Net DP in module/entity mfp_nexys4_ddr does not have driver. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:11]
 WARNING: [Synth 8-3848] Net AN in module/entity mfp_nexys4_ddr does not have driver. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'mfp_nexys4_ddr' (5#1) [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mfp_nexys4_ddr' (9#1) [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v:2]
+WARNING: [Synth 8-3331] design camera_decoder has unconnected port memclk
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[15]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[14]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[13]
@@ -118,7 +137,6 @@ WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port SW[4]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port SW[3]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port SW[2]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port SW[1]
-WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port SW[0]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port UART_TXD_IN
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JX[8]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JX[7]
@@ -128,8 +146,13 @@ WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JX[4]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JX[3]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JX[2]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JX[1]
+WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JC[6]
+WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JC[5]
+WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JC[3]
+WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JC[2]
+WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port JC[1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1422.480 ; gain = 33.422 ; free physical = 2831 ; free virtual = 7599
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1421.734 ; gain = 41.672 ; free physical = 4478 ; free virtual = 9485
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -142,11 +165,13 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1422.480 ; gain = 33.422 ; free physical = 2831 ; free virtual = 7599
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1421.734 ; gain = 41.672 ; free physical = 4476 ; free virtual = 9483
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1422.480 ; gain = 33.422 ; free physical = 2831 ; free virtual = 7599
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1421.734 ; gain = 41.672 ; free physical = 4476 ; free virtual = 9483
 ---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -154,34 +179,35 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'instance_name'
 Finished Parsing XDC File [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'instance_name'
-Parsing XDC File [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram'
-Finished Parsing XDC File [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram'
+Parsing XDC File [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cam_vga/bram'
+Finished Parsing XDC File [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cam_vga/bram'
 Parsing XDC File [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]
 WARNING: [Vivado 12-507] No nets matched 'tck_in'. [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:10]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk_virt' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:276]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'tck' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:280]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk_virt' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:280]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'tck' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc:284]
 Finished Parsing XDC File [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mfp_nexys4_ddr_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rew/Documents/final_project/camera/camera.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mfp_nexys4_ddr_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/mfp_nexys4_ddr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.348 ; gain = 0.000 ; free physical = 2545 ; free virtual = 7322
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.633 ; gain = 0.000 ; free physical = 4194 ; free virtual = 9194
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.348 ; gain = 0.000 ; free physical = 2546 ; free virtual = 7324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.633 ; gain = 0.000 ; free physical = 4195 ; free virtual = 9196
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.348 ; gain = 0.000 ; free physical = 2546 ; free virtual = 7324
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.348 ; gain = 0.000 ; free physical = 2546 ; free virtual = 7324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.633 ; gain = 0.000 ; free physical = 4195 ; free virtual = 9196
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.633 ; gain = 0.000 ; free physical = 4195 ; free virtual = 9196
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2626 ; free virtual = 7396
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4253 ; free virtual = 9262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2626 ; free virtual = 7396
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4253 ; free virtual = 9262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -189,13 +215,14 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/rew/Documents/final_project/camera/camera.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 4).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/rew/Documents/final_project/camera/camera.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_vga/bram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2628 ; free virtual = 7398
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4255 ; free virtual = 9264
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "row" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "pixel_row" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2618 ; free virtual = 7389
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4247 ; free virtual = 9255
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -211,14 +238,19 @@ Detailed RTL Component Info :
 	   2 Input     12 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 12    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -226,6 +258,14 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module camera_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
 Module test_pattern 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -246,6 +286,12 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
+Module camera_2_vga 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -262,7 +308,9 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5546] ROM "dtg/pixel_row" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'cam_vga/cam/addr_reg' and it is trimmed from '32' to '19' bits. [/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_decoder.v:65]
+INFO: [Synth 8-5545] ROM "cam_vga/cam/row" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "cam_vga/dtg/pixel_row" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[15]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[14]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[13]
@@ -280,14 +328,9 @@ WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[2]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[1]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port LED[0]
 WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port CA
-WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port CB
-WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port CC
-WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port CD
-WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port CE
-WARNING: [Synth 8-3331] design mfp_nexys4_ddr has unconnected port CF
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2608 ; free virtual = 7381
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4233 ; free virtual = 9243
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -302,13 +345,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_10MHz' 
 INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_31_5MHz' to pin 'instance_name/bbstub_clk_31_5MHz/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2483 ; free virtual = 7255
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4105 ; free virtual = 9114
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2479 ; free virtual = 7251
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4099 ; free virtual = 9108
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -320,7 +363,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2479 ; free virtual = 7251
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4098 ; free virtual = 9108
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -344,7 +387,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2463 ; free virtual = 7242
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4103 ; free virtual = 9113
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -357,7 +400,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2461 ; free virtual = 7241
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4103 ; free virtual = 9113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -369,25 +412,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2454 ; free virtual = 7239
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4103 ; free virtual = 9113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2453 ; free virtual = 7239
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4103 ; free virtual = 9113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2451 ; free virtual = 7238
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4103 ; free virtual = 9113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2450 ; free virtual = 7237
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4103 ; free virtual = 9113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -407,49 +450,54 @@ Report Cell Usage:
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
 |2     |clk_wiz_1     |     1|
-|3     |CARRY4        |    16|
-|4     |LUT1          |     7|
-|5     |LUT2          |    20|
-|6     |LUT3          |     6|
-|7     |LUT4          |    11|
-|8     |LUT5          |    12|
-|9     |LUT6          |    25|
-|10    |FDRE          |    89|
-|11    |IBUF          |     1|
-|12    |OBUF          |    14|
-|13    |OBUFT         |    32|
+|3     |BUFG          |     1|
+|4     |CARRY4        |    37|
+|5     |LUT1          |    11|
+|6     |LUT2          |    23|
+|7     |LUT3          |    32|
+|8     |LUT4          |    21|
+|9     |LUT5          |    14|
+|10    |LUT6          |    34|
+|11    |FDRE          |   195|
+|12    |IBUF          |     8|
+|13    |IBUFG         |     1|
+|14    |OBUF          |    14|
+|15    |OBUFT         |    32|
 +------+--------------+------+
 
 Report Instance Areas: 
-+------+---------+-------------+------+
-|      |Instance |Module       |Cells |
-+------+---------+-------------+------+
-|1     |top      |             |   239|
-|2     |  dtg    |dtg          |    94|
-|3     |  test   |test_pattern |    92|
-+------+---------+-------------+------+
++------+-------------+---------------+------+
+|      |Instance     |Module         |Cells |
++------+-------------+---------------+------+
+|1     |top          |               |   429|
+|2     |  cam_vga    |camera_2_vga   |   371|
+|3     |    cam      |camera_decoder |   157|
+|4     |    dtg      |dtg            |    90|
+|5     |    test_gen |test_pattern   |   115|
++------+-------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2449 ; free virtual = 7237
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4103 ; free virtual = 9113
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 78 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1793.348 ; gain = 33.422 ; free physical = 2486 ; free virtual = 7281
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1793.348 ; gain = 404.289 ; free physical = 2494 ; free virtual = 7289
+Synthesis finished with 0 errors, 0 critical warnings and 83 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1792.633 ; gain = 41.672 ; free physical = 4158 ; free virtual = 9168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1792.633 ; gain = 412.570 ; free physical = 4157 ; free virtual = 9167
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.348 ; gain = 0.000 ; free physical = 2419 ; free virtual = 7216
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.633 ; gain = 0.000 ; free physical = 4092 ; free virtual = 9102
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-30 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1793.348 ; gain = 404.367 ; free physical = 2473 ; free virtual = 7270
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.348 ; gain = 0.000 ; free physical = 2473 ; free virtual = 7270
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1792.633 ; gain = 412.648 ; free physical = 4148 ; free virtual = 9157
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1792.633 ; gain = 0.000 ; free physical = 4148 ; free virtual = 9157
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/rew/Documents/final_project/camera/camera.runs/synth_1/mfp_nexys4_ddr.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mfp_nexys4_ddr_utilization_synth.rpt -pb mfp_nexys4_ddr_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 24 00:45:50 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 24 17:10:58 2019...

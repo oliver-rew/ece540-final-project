@@ -33,6 +33,8 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo /home/rew/Documents/final_project/camera/camera.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  /home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_2_vga.v
+  /home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/camera_decoder.v
   /home/rew/Documents/final_project/camera/camera.srcs/sources_1/imports/hdl_part2/dtg.v
   /home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/test_pattern.v
   /home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/top.v

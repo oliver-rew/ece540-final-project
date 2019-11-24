@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572583937">
-  <File Type="POSTPLACE-PWROPT-DCP" Name="mfp_nexys4_ddr_postplace_pwropt.dcp"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="RDI-RDI" Name="mfp_nexys4_ddr.vdi"/>
-  <File Type="PLACE-DCP" Name="mfp_nexys4_ddr_placed.dcp"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="mfp_nexys4_ddr_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="mfp_nexys4_ddr_utilization_placed.rpt"/>
-  <File Type="PWROPT-DCP" Name="mfp_nexys4_ddr_pwropt.dcp"/>
-  <File Type="PLACE-IO" Name="mfp_nexys4_ddr_io_placed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mfp_nexys4_ddr_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="mfp_nexys4_ddr_routed_bb.dcp"/>
-  <File Type="BG-BGN" Name="mfp_nexys4_ddr.bgn"/>
   <File Type="OPT-HWDEF" Name="mfp_nexys4_ddr.hwdef"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="mfp_nexys4_ddr_postroute_physopt.dcp"/>
   <File Type="BITSTR-LTX" Name="mfp_nexys4_ddr.ltx"/>
-  <File Type="PLACE-CTRL" Name="mfp_nexys4_ddr_control_sets_placed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="mfp_nexys4_ddr.sysdef"/>
+  <File Type="PLACE-CTRL" Name="mfp_nexys4_ddr_control_sets_placed.rpt"/>
+  <File Type="BG-BGN" Name="mfp_nexys4_ddr.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mfp_nexys4_ddr_routed_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mfp_nexys4_ddr_postroute_physopt_bb.dcp"/>
+  <File Type="PLACE-IO" Name="mfp_nexys4_ddr_io_placed.rpt"/>
+  <File Type="PWROPT-DCP" Name="mfp_nexys4_ddr_pwropt.dcp"/>
+  <File Type="PLACE-UTIL" Name="mfp_nexys4_ddr_utilization_placed.rpt"/>
+  <File Type="RDI-RDI" Name="mfp_nexys4_ddr.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mfp_nexys4_ddr_postplace_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mfp_nexys4_ddr_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="mfp_nexys4_ddr_placed.dcp"/>
   <File Type="PLACE-UTIL-PB" Name="mfp_nexys4_ddr_utilization_placed.pb"/>
   <File Type="PA-TCL" Name="mfp_nexys4_ddr.tcl"/>
   <File Type="BITSTR-MSK" Name="mfp_nexys4_ddr.msk"/>
@@ -1767,6 +1767,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="rojobot31_0"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="rojobot31_0"/>
 </GenRun>

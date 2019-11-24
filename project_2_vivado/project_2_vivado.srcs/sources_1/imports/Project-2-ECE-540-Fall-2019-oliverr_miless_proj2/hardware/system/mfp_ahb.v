@@ -37,12 +37,6 @@ module mfp_ahb
     output                  IO_SEV_SEG_DP,
     output [7:0]            IO_SEV_SEG_AN, 
     
-    //Bot Control IO
-    output [7:0] IO_BotCtrl,
-    input [31:0] IO_Bot_Info,
-    output IO_INT_ACK,
-    input IO_BotUpdt_Sync,
-    
     //I2C
     inout i2c_sda,
     inout i2c_scl,
@@ -79,35 +73,28 @@ module mfp_ahb
     HRDATA2, 
     IO_Switch, 
     IO_PB, 
-    IO_LED, 
-    IO_BotCtrl, 
-    IO_Bot_Info,//TODO connection by name here
-    IO_INT_ACK,
-    IO_BotUpdt_Sync
+    IO_LED
   );
   
-  //instantiate i2c module
-  //TODO connect by name here
+  //instantiate I2C module
   mfp_ahb_i2c i2c(
-    HCLK, 
-    HRESETn, 
+    .HCLK(HCLK), 
+    .HRESETn(HRESETn), 
     
-    /*
-    even though the i2c ctrl's registers are 8 bit, 
-    they each use a single 32 bit as to be aligned
-    */
-    HADDR[5:2], 
+    // even though the i2c ctrl's registers are 8 bit, 
+    // they each use a single 32 bit reg so to be aligned
+    .HADDR(HADDR[5:2]), 
     
-    HTRANS, 
-    HWDATA, 
-    HWRITE, 
-    HSEL[4],
-    HRDATA3, 
+    .HTRANS(HTRANS), 
+    .HWDATA(HWDATA), 
+    .HWRITE(HWRITE), 
+    .HSEL(HSEL[4]),
+    .HRDATA(HRDATA3), 
     
     //I2C
-    i2c_sda,
-    i2c_scl,
-    i2c_clk
+    .i2c_sda(i2c_sda),
+    .i2c_scl(i2c_scl),
+    .i2c_clk(i2c_clk)
   );
                             
   //Module 3 - Seven Segment Display
@@ -137,15 +124,12 @@ module ahb_decoder
 );
 
   // Decode based on most significant bits of the address
-  assign HSEL[0] = (HADDR[28:22] == `H_RAM_RESET_ADDR_Match); // 128 KB RAM  at 0xbfc00000 (physical: 0x1fc00000)
-  assign HSEL[1] = (HADDR[28]    == `H_RAM_ADDR_Match);       // 256 KB RAM at 0x80000000 (physical: 0x00000000)
-  assign HSEL[2] = (HADDR[28:22] == `H_LED_ADDR_Match);       // GPIO at 0xbf800000 (physical: 0x1f800000)
-  assign HSEL[3] = (HADDR[28:20] == `H_7_SEG_ADDR_Match);   // 7 Segment Display at 0xbf70000 (physical: 0x1f700000)
-  
-  //TODO const this!!!!
-  assign HSEL[4] = (HADDR[28:20] == 9'h1f6);     //I2C ctrl at 0xbf60_0000 (physical: 0x1f60_0000)
+  assign HSEL[0] = (HADDR[28:22] == `H_RAM_RESET_ADDR_Match);   // 128 KB RAM  at 0xbfc00000 (physical: 0x1fc00000)
+  assign HSEL[1] = (HADDR[28]    == `H_RAM_ADDR_Match);         // 256 KB RAM at 0x80000000 (physical: 0x00000000)
+  assign HSEL[2] = (HADDR[28:22] == `H_LED_ADDR_Match);         // GPIO at 0xbf800000 (physical: 0x1f800000)
+  assign HSEL[3] = (HADDR[28:20] == `H_7_SEG_ADDR_Match);       // 7 Segment Display at 0xbf70000 (physical: 0x1f700000)
+  assign HSEL[4] = (HADDR[28:20] == `H_I2C_ADDR_Match);         //I2C ctrl at 0xbf60_0000 (physical: 0x1f60_0000)
 endmodule
-
 
 module ahb_mux
 (

@@ -35,38 +35,44 @@ module mfp_nexys4_ddr(
     output [3:0] VGA_B,
     output VGA_HS, VGA_VS,
     
-    //JA pins for I2C TODO should these both be inout?
-    inout [8:1] JA, //JA1 = SCL, JA2 = SDA
-    // JX Header
-    // 1 = SDA, 2 = SCL
-    inout [8:1] JX
+    //Camera Signals
+    inout [8:1] JD,
+    /*
+    JD1 : VSYNC
+    JD2 : D7
+    JD3 : D9
+    JD4 : D11
+    JD5 : HSYNC
+    JD6 : D8
+    JD7 : D10
+    JD8 : PIXCLK
+    */
+    
+    inout [8:1] JC
+    /*
+    JC1 : GPIO1
+    JC2 : SDA
+    JC3 : EXT CLK
+    JC4 : D5
+    JC5 : GPIO7
+    JC6 : SCL
+    JC7 : D4
+    JC8 : D6
+    */
 );
-    //assign JA[3] = LED[15];
 
-    // Press btnCpuReset to reset the processor. 
-        
-    wire clk_out, clk_out_75; 
+    wire clk_out, clk_out_75, clk_31_5MHz; 
     wire tck_in, tck;
     
     //debounce connections
     wire [5:0] PBTN_DB;
     wire [15:0] SW_DB;
   
-    //rojobot connections
-    wire [13:0] worldmap_addr;
-    wire [1:0] worldmap_data;
-    
-    wire [7:0] MotCtl_in, LocX_reg, LocY_reg, Sensors_reg, BotInfo_reg;
-    wire intAck, botUpdt;
-    reg botUpdtSync; 
-    
-    wire clk_32MHz;
-  
     clk_wiz_0 clk_wiz_0(
         .clk_in1(CLK100MHZ), 
-        .clk_out1(clk_out), 
-        .clk_out2(clk_out_75), 
-        .clk_out3(clk_32MHz) //TODO this isn't used
+        .clk_50MHz(clk_out), 
+        .clk_75MHz(clk_out_75),
+        .clk_31_5MHz(clk_31_5MHz)
     );
     
     IBUF IBUF1(.O(tck_in),.I(JB[4]));
@@ -97,21 +103,12 @@ module mfp_nexys4_ddr(
         .IO_SEV_SEG_DP(DP),
         .IO_SEV_SEG_AN(AN),
         
-        //Bot Control IO
-        .IO_BotCtrl(MotCtl_in),
-        .IO_Bot_Info({LocX_reg, LocY_reg, Sensors_reg, BotInfo_reg}),
-        .IO_INT_ACK(intAck),
-        .IO_BotUpdt_Sync(botUpdtSync),
-        
         //I2C connections
-//        .i2c_scl(JA[1]),
-//        .i2c_sda(JA[2]),
-        .i2c_scl(JX[6]),
-        .i2c_sda(JX[2]),
+        .i2c_scl(JC[6]),
+        .i2c_sda(JC[2]),
         .i2c_clk(clk_out) //give I2C module uninterrupted 50MHz clock
     );                   
         
-                   
     //add debounce module to debounce all buttons
     debounce debounce(
         .clk(clk_out),      //clock
@@ -120,89 +117,36 @@ module mfp_nexys4_ddr(
         .pbtn_db(PBTN_DB),  //push button debounced output
         .swtch_db(SW_DB)    //switch debounced output
     );
-  
-    //instantiate rojobot
-    rojobot31_0 rojobot31_0 (
-        .MotCtl_in(MotCtl_in),            // input wire [7 : 0] MotCtl_in
-        .LocX_reg(LocX_reg),              // output wire [7 : 0] LocX_reg
-        .LocY_reg(LocY_reg),              // output wire [7 : 0] LocY_reg
-        .Sensors_reg(Sensors_reg),        // output wire [7 : 0] Sensors_reg
-        .BotInfo_reg(BotInfo_reg),        // output wire [7 : 0] BotInfo_reg
-        .worldmap_addr(worldmap_addr),    // output wire [13 : 0] worldmap_addr
-        .worldmap_data(worldmap_data),    // input wire [1 : 0] worldmap_data
-        .clk_in(clk_out_75),              // input wire clk_in
-        .reset(~PBTN_DB[5]),              // input wire reset 
-        .upd_sysregs(botUpdt),            // output wire upd_sysregs 
-        .Bot_Config_reg(SW_DB[7:0])       // input wire [7 : 0] Bot_Config_reg 
-    );
-
-    wire video_on;
-    wire [11:0] pix_row, pix_col;
-    wire [6:0]  world_row, world_col;
-    wire [1:0]  world_data, icon_data;
     
-    dtg dtg(
-        .clock(clk_out_75),
-        .rst(~PBTN_DB[5]), 
-        .video_on(video_on),
-        .horiz_sync(VGA_HS),
-        .vert_sync(VGA_VS),
-        .pixel_row(pix_row),
-        .pixel_column(pix_col)
-    );
+    wire pix_clk, buf_clk;
     
-    //instantiate world map
-    world_map world_map(
-        .clka(clk_out_75),
-        .addra(worldmap_addr),
-        .douta(worldmap_data),
-        .clkb(clk_out_75),
-        .addrb({world_row, world_col}),
-        .doutb(world_data)
-    );
+    // external clock buffer. JD8 is a special clock capable pin, and the
+    // IBUFG buffers this clock into the internal global clock fabric so
+    // it can be used to clock other resources. It might be just fine to 
+    // use a non-clock capable external pin, but this _might_ need to be 
+    // changed to a BUFG to use it in that configuration
+    IBUFG ibufg1(.I(JD[8]), .O(buf_clk));
+    BUFG bug1(.I(buf_clk), .O(pix_clk));
     
-    //divide pixel column by 8 with bit shift; 1024/128 == 8
-    assign world_col = pix_col[9:3];
+    camera_2_vga cam_vga(
+        // control inputs
+        .reset(~PBTN_DB[5]),    //active high reset
+        .test(SW[0]),                  //active high test mode enable
     
-    //we need to divide the 768 pixel height down to the 128 pixel world.
-    //shift the row address once to divide it down to 384, then use 9 bit 
-    //LUT divide module to divide it by 3
-    integer_divide_lut #(9, 3) div(
-        .dividend(pix_row[9:1]),    //shift pix_row once to right
-        .quotient(world_row[6:0])   //output lowest 7 bits for 128 pixel out
-    );
-    
-    //instantiate colorizer module to ingest the icon and world 
-    //pixel data output the correct value on the VGA lines
-    colorizer color(
-        .video_on(video_on),
-        .vga_r(VGA_R),
-        .vga_g(VGA_G),
+        //camera inputs
+        .pix_clk(pix_clk),
+        .cam_vsync(JD[1]),  
+        .cam_hsync(JD[5]),
+        .cam_data({JD[4], JD[7], JD[3], JD[6], JD[2], JC[8], JC[4], JC[7]}), // D11, D10, D9, D8, D7, D6, D5, D4
+        
+        // VGA clock and outputs
+        .vga_clk(clk_31_5MHz), //31.5MHz for 640x480
+        .vga_r(VGA_R), 
+        .vga_g(VGA_G), 
         .vga_b(VGA_B),
-        .world_color(world_data),
-        .icon_color(icon_data) 
+        .vga_vs(VGA_VS), 
+        .vga_hs(VGA_HS)
     );
-    
-    //instantiate icon module
-    icon icon(
-        .pix_row(pix_row), 
-        .pix_col(pix_col),
-        .LocX_reg(LocX_reg), 
-        .LocY_reg(LocY_reg), 
-        .BotInfo_reg(BotInfo_reg),
-        .icon_color(icon_data),
-        .clk(clk_out_75)
-    );
-    
-    //always block to synchronize upd_sysregs from rojobot to MIPS core
-    always @(posedge clk_out) begin
-        if(intAck)
-            botUpdtSync <= 1'b0;
-        else if (botUpdt == 1'b1)
-            botUpdtSync <= 1'b1;
-        else    
-            botUpdtSync <= botUpdtSync;
-    end
             
 endmodule
 

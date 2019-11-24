@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Wed Nov 13 22:43:00 2019
+-- Date        : Sun Nov 24 17:44:52 2019
 -- Host        : rew-desktop running 64-bit Ubuntu 18.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl
@@ -16,9 +16,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity clk_wiz_0_clk_wiz_0_clk_wiz is
   port (
-    clk_out1 : out STD_LOGIC;
-    clk_out2 : out STD_LOGIC;
-    clk_out3 : out STD_LOGIC;
+    clk_50MHz : out STD_LOGIC;
+    clk_75MHz : out STD_LOGIC;
+    clk_31_5MHz : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -26,10 +26,10 @@ entity clk_wiz_0_clk_wiz_0_clk_wiz is
 end clk_wiz_0_clk_wiz_0_clk_wiz;
 
 architecture STRUCTURE of clk_wiz_0_clk_wiz_0_clk_wiz is
+  signal clk_31_5MHz_clk_wiz_0 : STD_LOGIC;
+  signal clk_50MHz_clk_wiz_0 : STD_LOGIC;
+  signal clk_75MHz_clk_wiz_0 : STD_LOGIC;
   signal clk_in1_clk_wiz_0 : STD_LOGIC;
-  signal clk_out1_clk_wiz_0 : STD_LOGIC;
-  signal clk_out2_clk_wiz_0 : STD_LOGIC;
-  signal clk_out3_clk_wiz_0 : STD_LOGIC;
   signal clkfbout_buf_clk_wiz_0 : STD_LOGIC;
   signal clkfbout_clk_wiz_0 : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
@@ -76,36 +76,36 @@ clkin1_ibufg: unisim.vcomponents.IBUF
     );
 clkout1_buf: unisim.vcomponents.BUFG
      port map (
-      I => clk_out1_clk_wiz_0,
-      O => clk_out1
+      I => clk_50MHz_clk_wiz_0,
+      O => clk_50MHz
     );
 clkout2_buf: unisim.vcomponents.BUFG
      port map (
-      I => clk_out2_clk_wiz_0,
-      O => clk_out2
+      I => clk_75MHz_clk_wiz_0,
+      O => clk_75MHz
     );
 clkout3_buf: unisim.vcomponents.BUFG
      port map (
-      I => clk_out3_clk_wiz_0,
-      O => clk_out3
+      I => clk_31_5MHz_clk_wiz_0,
+      O => clk_31_5MHz
     );
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT_F => 9.000000,
+      CLKFBOUT_MULT_F => 9.750000,
       CLKFBOUT_PHASE => 0.000000,
       CLKFBOUT_USE_FINE_PS => false,
       CLKIN1_PERIOD => 10.000000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE_F => 18.000000,
+      CLKOUT0_DIVIDE_F => 19.500000,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT0_USE_FINE_PS => false,
-      CLKOUT1_DIVIDE => 12,
+      CLKOUT1_DIVIDE => 13,
       CLKOUT1_DUTY_CYCLE => 0.500000,
       CLKOUT1_PHASE => 0.000000,
       CLKOUT1_USE_FINE_PS => false,
-      CLKOUT2_DIVIDE => 28,
+      CLKOUT2_DIVIDE => 31,
       CLKOUT2_DUTY_CYCLE => 0.500000,
       CLKOUT2_PHASE => 0.000000,
       CLKOUT2_USE_FINE_PS => false,
@@ -149,11 +149,11 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       CLKIN2 => '0',
       CLKINSEL => '1',
       CLKINSTOPPED => NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED,
-      CLKOUT0 => clk_out1_clk_wiz_0,
+      CLKOUT0 => clk_50MHz_clk_wiz_0,
       CLKOUT0B => NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED,
-      CLKOUT1 => clk_out2_clk_wiz_0,
+      CLKOUT1 => clk_75MHz_clk_wiz_0,
       CLKOUT1B => NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED,
-      CLKOUT2 => clk_out3_clk_wiz_0,
+      CLKOUT2 => clk_31_5MHz_clk_wiz_0,
       CLKOUT2B => NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED,
       CLKOUT3 => NLW_mmcm_adv_inst_CLKOUT3_UNCONNECTED,
       CLKOUT3B => NLW_mmcm_adv_inst_CLKOUT3B_UNCONNECTED,
@@ -182,9 +182,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity clk_wiz_0 is
   port (
-    clk_out1 : out STD_LOGIC;
-    clk_out2 : out STD_LOGIC;
-    clk_out3 : out STD_LOGIC;
+    clk_50MHz : out STD_LOGIC;
+    clk_75MHz : out STD_LOGIC;
+    clk_31_5MHz : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
@@ -195,9 +195,9 @@ architecture STRUCTURE of clk_wiz_0 is
 begin
 inst: entity work.clk_wiz_0_clk_wiz_0_clk_wiz
      port map (
-      clk_in1 => clk_in1,
-      clk_out1 => clk_out1,
-      clk_out2 => clk_out2,
-      clk_out3 => clk_out3
+      clk_31_5MHz => clk_31_5MHz,
+      clk_50MHz => clk_50MHz,
+      clk_75MHz => clk_75MHz,
+      clk_in1 => clk_in1
     );
 end STRUCTURE;

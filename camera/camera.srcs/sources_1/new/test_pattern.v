@@ -1,3 +1,7 @@
+/*
+test_pattern creates a 4x4 image of 16 equal sized
+blocks displaying all 16 possible 4 bit shades
+*/
 module test_pattern(
     input clk, 
     input reset, //active high reset
@@ -13,8 +17,6 @@ module test_pattern(
     reg [3:0] val;
     
     assign data = val;
-    
-    //assign data = col[9:6];
     
     always @(posedge clk) begin
         if(reset) begin
@@ -72,9 +74,6 @@ module test_pattern(
                 val[3:2] <= 4'h3;  
             else
                 val[3:2] <= 4'h0;    
-                
-            
-                
                 
         end
     end
