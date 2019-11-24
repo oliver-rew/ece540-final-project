@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/rew/Documents/final_project/camera/camera.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/rew/Documents/final_project/camera/camera.srcs/sim_1/new/dtg_tb.sv,1574577842,verilog,,,,dtg_tb,,,../../../../camera.srcs/sources_1/ip/clk_wiz_0;../../../../camera.srcs/sources_1/ip/clk_wiz_1,,,,,
+/home/rew/Documents/final_project/camera/camera.srcs/sim_1/new/tb.v,1574020554,verilog,,,,tb,,,../../../../camera.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/rew/Documents/final_project/camera/camera.srcs/sim_1/new/test_pattern_tb.sv,1574584468,verilog,,,,test_pattern_tb,,,../../../../camera.srcs/sources_1/ip/clk_wiz_0;../../../../camera.srcs/sources_1/ip/clk_wiz_1,,,,,
+/home/rew/Documents/final_project/camera/camera.srcs/sources_1/imports/hdl_part2/dtg.v,1574576981,verilog,,/home/rew/Documents/final_project/camera/camera.srcs/sim_1/new/dtg_tb.sv,,dtg,,,../../../../camera.srcs/sources_1/ip/clk_wiz_0;../../../../camera.srcs/sources_1/ip/clk_wiz_1,,,,,
+/home/rew/Documents/final_project/camera/camera.srcs/sources_1/new/test_pattern.v,1574584937,verilog,,/home/rew/Documents/final_project/camera/camera.srcs/sim_1/new/test_pattern_tb.sv,,test_pattern,,,../../../../camera.srcs/sources_1/ip/clk_wiz_0;../../../../camera.srcs/sources_1/ip/clk_wiz_1,,,,,

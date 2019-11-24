@@ -17,11 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-15151-rew-desktop/incrSyn
 set_param xicom.use_bs_reader 1
-set_param tcl.collectionResultDisplayLimit 0
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,7 +27,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.cache/wt [current_project]
 set_property parent.project_path /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.ipdefs/ece540_ip_repo_0 [current_project]
@@ -241,6 +238,9 @@ read_ip -quiet /home/rew/Documents/final_project/project_2_vivado/project_2_viva
 set_property used_in_implementation false [get_files -all /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+
+read_ip -quiet /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 read_edif /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hdl_part1/world_maps_part1/world_map.ngc
 # Mark all dcp files as not used in implementation to prevent them from being

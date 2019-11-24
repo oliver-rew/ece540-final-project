@@ -36,9 +36,12 @@ module mfp_nexys4_ddr(
     output VGA_HS, VGA_VS,
     
     //JA pins for I2C TODO should these both be inout?
-    inout [3:1] JA //JA1 = SCL, JA2 = SDA
+    inout [8:1] JA, //JA1 = SCL, JA2 = SDA
+    // JX Header
+    // 1 = SDA, 2 = SCL
+    inout [8:1] JX
 );
-    assign JA[3] = LED[15];
+    //assign JA[3] = LED[15];
 
     // Press btnCpuReset to reset the processor. 
         
@@ -68,7 +71,7 @@ module mfp_nexys4_ddr(
     
     IBUF IBUF1(.O(tck_in),.I(JB[4]));
     BUFG BUFG1(.O(tck), .I(tck_in));
-
+    
     mfp_sys mfp_sys(
         .SI_Reset_N(PBTN_DB[5]),     //use debounced signal
         .SI_ClkIn(clk_out),
@@ -101,8 +104,10 @@ module mfp_nexys4_ddr(
         .IO_BotUpdt_Sync(botUpdtSync),
         
         //I2C connections
-        .i2c_scl(JA[1]),
-        .i2c_sda(JA[2]),
+//        .i2c_scl(JA[1]),
+//        .i2c_sda(JA[2]),
+        .i2c_scl(JX[6]),
+        .i2c_sda(JX[2]),
         .i2c_clk(clk_out) //give I2C module uninterrupted 50MHz clock
     );                   
         

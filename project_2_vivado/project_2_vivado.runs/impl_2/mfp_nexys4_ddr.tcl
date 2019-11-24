@@ -60,16 +60,13 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-15151-rew-desktop/incrSyn
   set_param xicom.use_bs_reader 1
-  set_param tcl.collectionResultDisplayLimit 0
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -79,10 +76,11 @@ set rc [catch {
   update_ip_catalog
   set_property ip_output_repo /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.runs/synth_2/mfp_nexys4_ddr.dcp
   read_ip -quiet /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci
   read_ip -quiet /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
   read_edif /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/sources_1/imports/Project-2-ECE-540-Fall-2019-oliverr_miless_proj2/hdl_part1/world_maps_part1/world_map.ngc
   read_xdc /home/rew/Documents/final_project/project_2_vivado/project_2_vivado.srcs/constrs_1/imports/constraints/mfp_nexys4_ddr.xdc
   link_design -top mfp_nexys4_ddr -part xc7a100tcsg324-1
@@ -164,7 +162,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force mfp_nexys4_ddr.mmi }
   write_bitstream -force mfp_nexys4_ddr.bit 
   catch {write_debug_probes -quiet -force mfp_nexys4_ddr}

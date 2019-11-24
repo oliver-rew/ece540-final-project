@@ -1,0 +1,55 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sun Nov 24 00:46:46 2019
+| Host         : rew-desktop running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_methodology -file mfp_nexys4_ddr_methodology_drc_routed.rpt -pb mfp_nexys4_ddr_methodology_drc_routed.pb -rpx mfp_nexys4_ddr_methodology_drc_routed.rpx
+| Design       : mfp_nexys4_ddr
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++----------+----------+------------------------------------------------+------------+
+| Rule     | Severity | Description                                    | Violations |
++----------+----------+------------------------------------------------+------------+
+| TIMING-6 | Warning  | No common primary clock between related clocks | 4          |
++----------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_10MHz_clk_wiz_1 and clk_10MHz_clk_wiz_1_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_10MHz_clk_wiz_1] -to [get_clocks clk_10MHz_clk_wiz_1_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_10MHz_clk_wiz_1_1 and clk_10MHz_clk_wiz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_10MHz_clk_wiz_1_1] -to [get_clocks clk_10MHz_clk_wiz_1]
+Related violations: <none>
+
+TIMING-6#3 Warning
+No common primary clock between related clocks  
+The clocks clk_31_5MHz_clk_wiz_1 and clk_31_5MHz_clk_wiz_1_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_31_5MHz_clk_wiz_1] -to [get_clocks clk_31_5MHz_clk_wiz_1_1]
+Related violations: <none>
+
+TIMING-6#4 Warning
+No common primary clock between related clocks  
+The clocks clk_31_5MHz_clk_wiz_1_1 and clk_31_5MHz_clk_wiz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_31_5MHz_clk_wiz_1_1] -to [get_clocks clk_31_5MHz_clk_wiz_1]
+Related violations: <none>
+
+

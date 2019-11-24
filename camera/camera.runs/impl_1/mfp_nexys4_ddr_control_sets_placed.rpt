@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sun Nov 24 00:46:21 2019
+| Host         : rew-desktop running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_control_sets -verbose -file mfp_nexys4_ddr_control_sets_placed.rpt
+| Design       : mfp_nexys4_ddr
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    37 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|     10 |            2 |
+|     12 |            1 |
+|     15 |            1 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |           11 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              44 |           13 |
+| Yes          | No                    | No                     |               4 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              41 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+-----------------+------------------------------+------------------+----------------+
+|           Clock Signal          |  Enable Signal  |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++---------------------------------+-----------------+------------------------------+------------------+----------------+
+|  instance_name/inst/clk_10MHz   | CPU_RESETN_IBUF |                              |                4 |              4 |
+|  instance_name/inst/clk_10MHz   |                 | test/col[9]_i_1_n_0          |                3 |             10 |
+|  instance_name/inst/clk_10MHz   | test/row0       | test/row[9]_i_1_n_0          |                3 |             10 |
+|  instance_name/inst/clk_31_5MHz | dtg/pixel_row   | dtg/pixel_row[0]_i_1_n_0     |                3 |             12 |
+|  instance_name/inst/clk_31_5MHz |                 | dtg/pixel_column[11]_i_1_n_0 |                5 |             15 |
+|  instance_name/inst/clk_31_5MHz |                 |                              |               11 |             18 |
+|  instance_name/inst/clk_10MHz   |                 | test/addr[0]_i_1_n_0         |                5 |             19 |
+|  instance_name/inst/clk_31_5MHz | dtg/pix_num0    | dtg/pix_num[0]_i_1_n_0       |                5 |             19 |
++---------------------------------+-----------------+------------------------------+------------------+----------------+
+
+
