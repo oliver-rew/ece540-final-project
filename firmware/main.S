@@ -186,6 +186,11 @@ first:
     li		$12, 0x00000000
     sw      $12, 0($13)
 
+    end:
+    nop
+    nop
+    j end
+
     #Delay before restarting
     li      $8, 100000000
     jal DELAY;
